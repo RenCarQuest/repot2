@@ -47,5 +47,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app need your location to provide best feature based on location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app need your location to provide best feature based on location</string>
 </dict>
 </plist>

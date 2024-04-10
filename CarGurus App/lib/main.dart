@@ -23,7 +23,6 @@ void main() async {
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: "Gilroy",
-          androidOverscrollIndicator: AndroidOverscrollIndicator.stretch,
         ),
         initialRoute: Routes.initial,
         getPages: getPages,

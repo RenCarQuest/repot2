@@ -11,8 +11,15 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await di.init();
   await GetStorage.init();
-  runApp(
-    MultiProvider(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
       providers: [
         ChangeNotifierProvider(
           create: (_) => ColorNotifire(),
@@ -27,6 +34,6 @@ void main() async {
         initialRoute: Routes.initial,
         getPages: getPages,
       ),
-    ),
-  );
+    );
+  }
 }

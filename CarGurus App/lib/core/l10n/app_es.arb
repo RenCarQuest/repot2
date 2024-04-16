@@ -1,0 +1,16 @@
+{
+    "@@locale": "es",
+    "appTitle": "CarQuest",
+    "carRentalWelcome": "Te damos la bienvenida a",
+    "searchBarHint": "Escribe aquí",
+    "pickUpSectionMessage": "Recogida",
+    "deliverySectionMessage" : "Devolución",
+    "cityTitle": "Ciudad",
+    "dateTitle": "Fecha",
+    "timeTitle": "Hora",
+    "popularSectionTitle": "Populares",
+    "viewAllMessage": "Ver todos",
+    "recommendationsSectionTitle": "Nuestras recomendaciones",
+    "rentButtonTitle": "Rentar ahora",
+    "showMoreCarsButtonTitle": "Ver más autos"
+}

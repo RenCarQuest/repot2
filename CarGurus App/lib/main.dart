@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
+import 'package:carguru/core/providers/locale_provider.dart';
 import 'package:carguru/helpar/routes_helper.dart';
 import 'package:carguru/utils/Dark_lightmode.dart';
 import 'package:flutter/material.dart';
@@ -19,24 +20,27 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (_) => ColorNotifire(),
-        ),
-      ],
-      child: GetMaterialApp(
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        supportedLocales: AppLocalizations.supportedLocales,
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-          fontFamily: "Gilroy",
-        ),
-        initialRoute: Routes.initial,
-        getPages: getPages,
-      ),
-    );
-  }
+  Widget build(BuildContext context) => ChangeNotifierProvider(
+      create: (context) => LocaleProvider(),
+      builder: (context, child) {
+        final localeProvider = Provider.of<LocaleProvider>(context);
+
+        return MultiProvider(
+          providers: [
+            ChangeNotifierProvider(create: (_) => ColorNotifire()),
+          ],
+          child: GetMaterialApp(
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            locale: localeProvider.locale,
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+              fontFamily: "Gilroy",
+            ),
+            initialRoute: Routes.initial,
+            getPages: getPages,
+          ),
+        );
+      });
 }

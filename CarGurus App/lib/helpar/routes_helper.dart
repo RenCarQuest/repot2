@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:carguru/screen/addlocation/addressdetails_screen.dart';
-import 'package:carguru/screen/addlocation/deliveryaddress1.dart';
-import 'package:carguru/screen/addlocation/deliveryaddress2.dart';
-import 'package:carguru/screen/login_flow/onbording_screen.dart';
-import 'package:carguru/screen/login_flow/otp_screen.dart';
+import 'package:carguru/presentation/features/screen/addlocation/addressdetails_screen.dart';
+import 'package:carguru/presentation/features/screen/addlocation/deliveryaddress1.dart';
+import 'package:carguru/presentation/features/screen/addlocation/deliveryaddress2.dart';
+import 'package:carguru/presentation/features/screen/login_flow/onbording_screen.dart';
+import 'package:carguru/presentation/features/screen/login_flow/otp_screen.dart';
 import 'package:get/get.dart';
 
 class Routes {

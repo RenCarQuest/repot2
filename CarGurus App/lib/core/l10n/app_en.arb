@@ -1,0 +1,22 @@
+{
+    "@@locale": "en",
+    "appTitle": "CarQuest",
+    "@appTitle": {
+        "description": "Main application title"
+    },
+    "carRentalWelcome": "We welcome you to",
+    "@carRentalWelcome" : {
+        "description": "Show the welcome message for the car rental screen"
+    },
+    "searchBarHint": "Write here",
+    "pickUpSectionMessage": "Pick up",
+    "deliverySectionMessage" : "Delivery",
+    "cityTitle": "City",
+    "dateTitle": "Date",
+    "timeTitle": "Time",
+    "popularSectionTitle": "Populars",
+    "viewAllMessage": "View All",
+    "recommendationsSectionTitle": "Our recommendations",
+    "rentButtonTitle": "Rental Now",
+    "showMoreCarsButtonTitle": "Show More Cars"
+}

@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace, unused_element, sort_child_properties_last
-import 'dart:async';
 import 'package:carguru/presentation/features/screen/login_flow/login_screen.dart';
 import 'package:carguru/utils/App_content.dart';
 import 'package:carguru/utils/Colors.dart';
@@ -7,7 +6,6 @@ import 'package:carguru/utils/Custom_widget.dart';
 import 'package:carguru/utils/Dark_lightmode.dart';
 import 'package:carguru/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -20,68 +18,6 @@ class OnbordingScreen extends StatefulWidget {
 }
 
 class _OnbordingScreenState extends State<OnbordingScreen> {
-  late ColorNotifire notifire;
-  getdarkmodepreviousstate() async {
-    final prefs = await SharedPreferences.getInstance();
-    bool? previusstate = prefs.getBool("setIsDark");
-    if (previusstate == null) {
-      notifire.setIsDark = false;
-    } else {
-      notifire.setIsDark = previusstate;
-    }
-  }
-
-  @override
-  void initState() {
-    getdarkmodepreviousstate();
-    super.initState();
-    getLocationPermition();
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BordingScreen(),),);
-    });
-  }
-
-  getLocationPermition() async {
-    LocationPermission permission;
-    permission = await Geolocator.checkPermission();
-    permission = await Geolocator.requestPermission();
-    if (permission == LocationPermission.denied) {}
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    notifire = Provider.of<ColorNotifire>(context, listen: true);
-    return Scaffold(
-        backgroundColor: notifire.getbgcolor,
-        body: Container(
-          height: Get.size.height,
-          width: Get.size.width,
-          alignment: Alignment.center,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('assets/sLogo.png', height: 68,),
-              SizedBox(height: 15),
-              RichText(text: TextSpan(
-                children: [
-                  TextSpan(text: 'Car', style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 39, color: notifire.getwhiteblackcolor, letterSpacing: 1,),),
-                  TextSpan(text: 'Guru.', style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 39, color: onbordingBlue, letterSpacing: 1,),),
-                ],
-              )),
-            ],
-          ),
-        ));
-  }
-}
-
-class BordingScreen extends StatefulWidget {
-  const BordingScreen({super.key});
-
-  @override
-  State<BordingScreen> createState() => _BordingScreenState();
-}
-
-class _BordingScreenState extends State<BordingScreen> {
   int index = 0;
 
   PageController pageController = PageController();

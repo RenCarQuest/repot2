@@ -19,7 +19,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreen extends State<SplashScreen> {
   late ColorNotifire notifire;
 
-  getdarkmodepreviousstate() async {
+  getDarkModePreviousState() async {
     final prefs = await SharedPreferences.getInstance();
     bool? previusstate = prefs.getBool("setIsDark");
     if (previusstate == null) {
@@ -31,7 +31,7 @@ class _SplashScreen extends State<SplashScreen> {
 
   @override
   void initState() {
-    getdarkmodepreviousstate();
+    getDarkModePreviousState();
     super.initState();
     getLocationPermition();
     Timer(const Duration(seconds: 3), () {
@@ -47,8 +47,9 @@ class _SplashScreen extends State<SplashScreen> {
   getLocationPermition() async {
     LocationPermission permission;
     permission = await Geolocator.checkPermission();
-    permission = await Geolocator.requestPermission();
-    if (permission == LocationPermission.denied) {}
+    if (permission == LocationPermission.unableToDetermine || permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+    }
   }
 
   @override

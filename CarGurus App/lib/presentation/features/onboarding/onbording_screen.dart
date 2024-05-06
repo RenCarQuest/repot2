@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace, unused_element, sort_child_properties_last
 import 'package:carguru/presentation/features/screen/login_flow/login_screen.dart';
 import 'package:carguru/utils/App_content.dart';
 import 'package:carguru/utils/Colors.dart';
@@ -19,11 +18,12 @@ class OnbordingScreen extends StatefulWidget {
 
 class _OnbordingScreenState extends State<OnbordingScreen> {
   int index = 0;
+  final int totalPages = 3;
 
   PageController pageController = PageController();
 
   late ColorNotifire notifire;
-  getdarkmodepreviousstate() async {
+  getDarkModePreviousState() async {
     final prefs = await SharedPreferences.getInstance();
     bool? previusstate = prefs.getBool("setIsDark");
     if (previusstate == null) {
@@ -35,20 +35,21 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
 
   @override
   void initState() {
-    getdarkmodepreviousstate();
+    getDarkModePreviousState();
     super.initState();
   }
 
   Widget _buildPageIndicator() {
-    Row row = Row(mainAxisAlignment: MainAxisAlignment.center, children: []);
-    for (int i = 0; i < 3; i++) {
-      row.children.add(_buildPageIndicatorItem(i));
-      if (i != 3 - 1)
-        // ignore: curly_braces_in_flow_control_structures
-        row.children.add(const SizedBox(
-          width: 10,
-        ));
+    List<Widget> list = [];
+    
+    for (int i = 0; i < totalPages; i++) {
+      list.add(_buildPageIndicatorItem(i));
+      if (i != totalPages - 1) {
+        list.add(const SizedBox(width: 10));
+      }
     }
+
+    Row row = Row(mainAxisAlignment: MainAxisAlignment.center, children: list);
     return row;
   }
 
@@ -74,14 +75,19 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
             width: Get.size.width,
             color: index == 0 ? BlackColor : onbordingBlue,
             child: PageView.builder(
+              physics: const ClampingScrollPhysics(),
               controller: pageController,
-              itemCount: 3,
+              itemCount: totalPages,
               itemBuilder: (context, index) {
                 return Container(
-                  margin:
-                      index == 2 ? EdgeInsets.only(left: 20) : EdgeInsets.zero,
+                  margin: index == 2
+                      ? const EdgeInsets.only(left: 20)
+                      : EdgeInsets.zero,
                   decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage(index == 0 ? Appcontent.onbording1 : index == 1 ? Appcontent.onbording2 : Appcontent.onbording3,), fit: index == 0 ? BoxFit.cover : null,),
+                    image: DecorationImage(
+                      image: AssetImage(_backgroundImageName(index)),
+                      fit: index == 0 ? BoxFit.cover : null,
+                    ),
                   ),
                 );
               },
@@ -92,105 +98,25 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
               },
             ),
           ),
-          index != 2
-              ? Positioned(
-                  top: Get.size.height * 0.06,
-                  left: 0,
-                  right: 0,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        width: 15,
-                      ),
-                      _buildPageIndicator(),
-                      Spacer(),
-                      InkWell(
-                        onTap: () {
-                          setState(() {
-                            pageController.jumpToPage(2);
-                          });
-                        },
-                        child: Text(
-                          "Skip".tr,
-                          style: TextStyle(
-                            fontFamily: FontFamily.gilroyMedium,
-                            color: index == 0 ? onbordingBlue : WhiteColor,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                    ],
-                  ),
-                )
-              : SizedBox(),
-          Positioned(
-            top: Get.size.height * 0.12,
-            child: Container(
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 15),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      index == 0
-                          ? "Your key to hassle-\nfree car shopping".tr
-                          : index == 1
-                              ? "Revolutionize your car\nbuying experience".tr
-                              : "Let’s get started".tr,
-                      style: TextStyle(
-                        fontFamily: FontFamily.gilroyBold,
-                        color: WhiteColor,
-                        fontSize: 25,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      index == 0
-                          ? "You choose your car online. We inspect\nit and deliver it."
-                              .tr
-                          : index == 1
-                              ? "Answer a few quick questions to find\nthe right car for you."
-                                  .tr
-                              : "Sign up or login to see what\nhappening near you",
-                      style: TextStyle(
-                        fontFamily: FontFamily.gilroyMedium,
-                        color: greyScale,
-                        fontSize: 15,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
+          index != 2 ? _pageIndicatorSection() : const SizedBox(),
           index == 2
               ? Positioned(
                   top: Get.size.height * 0.08,
                   child: Row(
                     children: [
-                      SizedBox(
-                        width: 15,
-                      ),
+                      const SizedBox(width: 15),
                       Container(
                         height: 35,
                         width: 35,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage("assets/whitecar.png"),
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 10,
-                      ),
+                      const SizedBox(width: 10),
                       Text(
-                        "CarGuru".tr,
+                        "Uttil",
                         style: TextStyle(
                           fontFamily: FontFamily.gilroyBold,
                           fontSize: 32,
@@ -201,112 +127,189 @@ class _OnbordingScreenState extends State<OnbordingScreen> {
                     ],
                   ),
                 )
-              : SizedBox(),
+              : const SizedBox(),
+          Positioned(
+            top: Get.size.height * 0.12,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    _titlePage(index),
+                    style: TextStyle(
+                      fontFamily: FontFamily.gilroyBold,
+                      color: WhiteColor,
+                      fontSize: 25,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    _descriptionPage(index),
+                    style: TextStyle(
+                      fontFamily: FontFamily.gilroyMedium,
+                      color: greyScale,
+                      fontSize: 15,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Positioned(
             bottom: 50,
             left: 0,
             right: 0,
-            child: Container(
-              child: index == 0
-                  ? Column(
-                      children: [
-                        GestButton(
-                          height: 50,
-                          Width: Get.size.width,
-                          margin:
-                              EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-                          buttoncolor: onbordingBlue,
-                          buttontext: "Get Started",
-                          style: TextStyle(
-                            fontFamily: FontFamily.gilroyBold,
-                            color: WhiteColor,
-                            fontSize: 15,
-                          ),
-                          onclick: () {
-                            pageController.jumpToPage(1);
-                          },
-                        ),
-                      ],
-                    )
-                  : index == 1
-                      ? Column(
-                          children: [
-                            GestButton(
-                              height: 50,
-                              Width: Get.size.width,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 5, horizontal: 30),
-                              buttoncolor: WhiteColor,
-                              buttontext: "Get Started",
-                              style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
-                                color: onbordingBlue,
-                                fontSize: 15,
-                              ),
-                              onclick: () {
-                                pageController.jumpToPage(2);
-                              },
-                            ),
-                          ],
-                        )
-                      : Column(
-                          children: [
-                            GestButton(
-                              height: 50,
-                              Width: Get.size.width,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 5, horizontal: 30),
-                              buttoncolor: WhiteColor,
-                              buttontext: "Continue with Email",
-                              style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
-                                color: onbordingBlue,
-                                fontSize: 15,
-                              ),
-                              onclick: () {
-                                Get.to(LoginScreen());
-                              },
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            imageButton(
-                              height: 50,
-                              width: Get.size.width,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 5, horizontal: 30),
-                              image: "assets/google.png",
-                              buttonText: "Continue with Google",
-                              style: TextStyle(
-                                fontFamily: FontFamily.gilroyMedium,
-                                color: WhiteColor,
-                                fontSize: 15,
-                              ),
-                              border: Border.all(color: grey50),
-                              onTap: () {},
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            imageButton(
-                              height: 50,
-                              width: Get.size.width,
-                              margin: EdgeInsets.symmetric(
-                                  vertical: 5, horizontal: 30),
-                              image: "assets/apple.png",
-                              buttonText: "Continue with Apple",
-                              style: TextStyle(
-                                fontFamily: FontFamily.gilroyMedium,
-                                color: WhiteColor,
-                                fontSize: 15,
-                              ),
-                              border: Border.all(color: grey50),
-                              onTap: () {},
-                            ),
-                          ],
-                        ),
-            ),
+            child: _footerSection(index),
           )
+        ],
+      ),
+    );
+  }
+
+  Widget _footerSection(int index) {
+    switch (index) {
+      case 0 || 1:
+        return Column(
+          children: [
+            GestButton(
+              height: 50,
+              Width: Get.size.width,
+              margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+              buttoncolor: index == 0 ? onbordingBlue : WhiteColor,
+              buttontext: "Get Started",
+              style: TextStyle(
+                fontFamily: FontFamily.gilroyBold,
+                color: index == 0 ? WhiteColor : onbordingBlue,
+                fontSize: 15,
+              ),
+              onclick: () {
+                pageController.jumpToPage(index + 1);
+              },
+            ),
+          ],
+        );
+      case 2:
+        return Column(
+          children: [
+            GestButton(
+              height: 50,
+              Width: Get.size.width,
+              margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+              buttoncolor: WhiteColor,
+              buttontext: "Continue with Email",
+              style: TextStyle(
+                fontFamily: FontFamily.gilroyBold,
+                color: onbordingBlue,
+                fontSize: 15,
+              ),
+              onclick: () {
+                Get.to(const LoginScreen());
+              },
+            ),
+            const SizedBox(height: 10),
+            imageButton(
+              height: 50,
+              width: Get.size.width,
+              margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+              image: "assets/google.png",
+              buttonText: "Continue with Google",
+              style: TextStyle(
+                fontFamily: FontFamily.gilroyMedium,
+                color: WhiteColor,
+                fontSize: 15,
+              ),
+              border: Border.all(color: grey50),
+              onTap: () {},
+            ),
+            const SizedBox(height: 10),
+            imageButton(
+              height: 50,
+              width: Get.size.width,
+              margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+              image: "assets/apple.png",
+              buttonText: "Continue with Apple",
+              style: TextStyle(
+                fontFamily: FontFamily.gilroyMedium,
+                color: WhiteColor,
+                fontSize: 15,
+              ),
+              border: Border.all(color: grey50),
+              onTap: () {},
+            ),
+          ],
+        );
+      default:
+        return const SizedBox();
+    }
+  }
+
+  String _descriptionPage(int index) {
+    switch (index) {
+      case 0:
+        return "You choose your car online. We inspect\nit and deliver it.";
+      case 1:
+        return "Answer a few quick questions to find\nthe right car for you.";
+      case 2:
+        return "Sign up or login to see what\nhappening near you";
+      default:
+        return "";
+    }
+  }
+
+  String _titlePage(int index) {
+    switch (index) {
+      case 0:
+        return "Your key to hassle-\nfree car shopping".tr;
+      case 1:
+        return "Revolutionize your car\nbuying experience".tr;
+      case 2:
+        return "Let’s get started".tr;
+      default:
+        return "";
+    }
+  }
+
+  String _backgroundImageName(int index) {
+    switch (index) {
+      case 0:
+        return Appcontent.onbording1;
+      case 1:
+        return Appcontent.onbording2;
+      case 2:
+        return Appcontent.onbording3;
+      default:
+        return "";
+    }
+  }
+
+  Positioned _pageIndicatorSection() {
+    return Positioned(
+      top: Get.size.height * 0.06,
+      left: 0,
+      right: 0,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const SizedBox(width: 15),
+          _buildPageIndicator(),
+          const Spacer(),
+          InkWell(
+            onTap: () {
+              setState(() {
+                pageController.jumpToPage(totalPages - 1);
+              });
+            },
+            child: Text(
+              "Skip".tr,
+              style: TextStyle(
+                fontFamily: FontFamily.gilroyMedium,
+                color: index == 0 ? onbordingBlue : WhiteColor,
+                fontSize: 16,
+              ),
+            ),
+          ),
+          const SizedBox(width: 20),
         ],
       ),
     );

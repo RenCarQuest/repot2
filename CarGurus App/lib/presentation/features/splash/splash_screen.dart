@@ -1,10 +1,11 @@
 import 'dart:async';
+import 'package:carguru/utils/App_content.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
-import 'package:carguru/presentation/features/onboarding/onbording_screen.dart';
+import 'package:carguru/presentation/features/onboarding/onboarding_screen.dart';
 import 'package:carguru/utils/Dark_lightmode.dart';
 import 'package:carguru/utils/fontfameli_model.dart';
 import 'package:carguru/utils/Colors.dart';
@@ -33,21 +34,22 @@ class _SplashScreen extends State<SplashScreen> {
   void initState() {
     getDarkModePreviousState();
     super.initState();
-    getLocationPermition();
+    getLocationPermission();
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const OnbordingScreen(),
+          builder: (context) => const OnboardingScreen(),
         ),
       );
     });
   }
 
-  getLocationPermition() async {
+  getLocationPermission() async {
     LocationPermission permission;
     permission = await Geolocator.checkPermission();
-    if (permission == LocationPermission.unableToDetermine || permission == LocationPermission.denied) {
+    if (permission == LocationPermission.unableToDetermine ||
+        permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
     }
   }
@@ -65,7 +67,7 @@ class _SplashScreen extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/sLogo.png',
+              Appcontent.sLogo,
               height: 68,
             ),
             const SizedBox(height: 15),

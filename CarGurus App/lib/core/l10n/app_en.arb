@@ -1,6 +1,6 @@
 {
     "@@locale": "en",
-    "appTitle": "CarQuest",
+    "appTitle": "Uttil",
     "@appTitle": {
         "description": "Main application title"
     },
@@ -18,5 +18,10 @@
     "viewAllMessage": "View All",
     "recommendationsSectionTitle": "Our recommendations",
     "rentButtonTitle": "Rental Now",
-    "showMoreCarsButtonTitle": "Show More Cars"
+    "showMoreCarsButtonTitle": "Show More Cars",
+    "generalSkip": "Skip",
+    "generalGetStartedButton": "Get Started",
+    "onboardingEmailButton": "Continue with Email",
+    "onboardingAppleButton": "Continue with Apple",
+    "onboardingGoogleButton": "Continue with Google"
 }

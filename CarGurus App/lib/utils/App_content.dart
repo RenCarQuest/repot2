@@ -3,6 +3,7 @@ class Appcontent{
   static const String close = 'assets/x.png';
   static const String logo = 'assets/whitecar.png';
   static const String logo1 = 'assets/logo.png';
+  static const String sLogo = 'assets/sLogo.png';
   static const String profile = 'assets/artist-1 1.png';
   static const String edit = 'assets/edit.png';
 

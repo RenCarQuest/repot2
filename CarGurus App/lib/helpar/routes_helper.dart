@@ -3,8 +3,8 @@
 import 'package:carguru/presentation/features/screen/addlocation/addressdetails_screen.dart';
 import 'package:carguru/presentation/features/screen/addlocation/deliveryaddress1.dart';
 import 'package:carguru/presentation/features/screen/addlocation/deliveryaddress2.dart';
-import 'package:carguru/presentation/features/screen/login_flow/onbording_screen.dart';
 import 'package:carguru/presentation/features/screen/login_flow/otp_screen.dart';
+import 'package:carguru/presentation/features/splash/splash_screen.dart';
 import 'package:get/get.dart';
 
 class Routes {
@@ -18,7 +18,7 @@ class Routes {
 final getPages = [
   GetPage(
     name: Routes.initial,
-    page: () => OnbordingScreen(),
+    page: () => SplashScreen(),
   ),
   GetPage(
     name: Routes.otpScreen,

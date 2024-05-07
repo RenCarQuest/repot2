@@ -1,6 +1,6 @@
 {
     "@@locale": "es",
-    "appTitle": "CarQuest",
+    "appTitle": "Uttil",
     "carRentalWelcome": "Te damos la bienvenida a",
     "searchBarHint": "Escribe aquí",
     "pickUpSectionMessage": "Recogida",
@@ -12,5 +12,10 @@
     "viewAllMessage": "Ver todos",
     "recommendationsSectionTitle": "Nuestras recomendaciones",
     "rentButtonTitle": "Rentar ahora",
-    "showMoreCarsButtonTitle": "Ver más autos"
+    "showMoreCarsButtonTitle": "Ver más autos",
+    "generalSkip": "Saltar",
+    "generalGetStartedButton": "Empezar",
+    "onboardingEmailButton": "Continuar con Correo",
+    "onboardingAppleButton": "Continuar con Apple",
+    "onboardingGoogleButton": "Continuar con Google"
 }

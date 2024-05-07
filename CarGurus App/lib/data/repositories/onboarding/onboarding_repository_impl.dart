@@ -1,5 +1,5 @@
 import 'package:carguru/core/utils/results.dart';
-import 'package:carguru/domain/models/onboarding_model.dart';
+import 'package:carguru/domain/models/onboarding/onboarding_model.dart';
 import 'package:carguru/domain/repositories/onboarding/onboarding_repository.dart';
 
 import '../../data_sources/onboarding/onboarding_data_source.dart';

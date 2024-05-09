@@ -1,5 +1,6 @@
 import 'package:carguru/domain/models/faq/faq_model.dart';
 import 'package:carguru/domain/repositories/faq/faq_repository.dart';
+import 'package:flutter/widgets.dart';
 import 'package:injectable/injectable.dart';
 import '../../../core/utils/results.dart';
 
@@ -9,7 +10,7 @@ class GetFaqsUseCase {
 
   final FaqRepository _faqRepository;
 
-  Future<Result<List<FaqModel>>> invoke() {
-    return _faqRepository.getFaq();
+  Future<Result<List<FaqModel>>> invoke(BuildContext context) {
+    return _faqRepository.getFaq(context);
   }
 }

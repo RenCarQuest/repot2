@@ -25,7 +25,7 @@ class _FaqScreenState extends State<FaqScreen> {
   @override
   void initState() {
     super.initState();
-    context.read<FaqCubit>().getFaqs();
+    context.read<FaqCubit>().getFaqs(context);
   }
 
   @override

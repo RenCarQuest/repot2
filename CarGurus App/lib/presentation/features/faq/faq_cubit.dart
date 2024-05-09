@@ -3,6 +3,7 @@ import '../../../domain/use_cases/faq/get_faqs_use_case.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
+import 'package:flutter/widgets.dart';
 
 part 'faq_state.dart';
 part 'faq_cubit.freezed.dart';
@@ -28,9 +29,9 @@ class FaqCubit extends Cubit<FaqState> {
     emit(state.copyWith(faqs: searchFaqs));
   }
 
-  Future<void> getFaqs() async {
+  Future<void> getFaqs(BuildContext context) async {
     emit(state.copyWith(isLoading: true));
-    final result = await _getFaqsUseCase.invoke();
+    final result = await _getFaqsUseCase.invoke(context);
     if (result.isFailure) {
       emit(state.copyWith(
         errorMessage: result.error.toString(),

@@ -48,6 +48,7 @@ imageButton({
   double? width,
   double? height,
   EdgeInsetsGeometry? margin,
+  double? spacing,
   String? image,
   String? buttonText,
   TextStyle? style,
@@ -76,7 +77,7 @@ imageButton({
             ),
           ),
           SizedBox(
-            width: 40,
+            width: spacing ?? 40,
           ),
           Container(
             alignment: Alignment.center,

@@ -1,5 +1,4 @@
 // ignore_for_file: camel_case_types
-
 class model {
   List catList = [
     "Sedan",
@@ -14,12 +13,14 @@ class model {
     "Appointment",
     "Test Drive",
     "My vouchers",
+    "Help Center"
   ];
 
   List<String> imgList = [
     "assets/appointment.png",
     "assets/testDrive.png",
     "assets/global.png",
+    "assets/question-circle-outlined.png"
   ];
 
   List<String> img = [
@@ -42,7 +43,6 @@ class model {
     'Jun 12, 2022 at 02:00 PM',
     'Jun 12, 2022 at 08:45 AM',
   ];
-
 
   List addre = [
     'Home',

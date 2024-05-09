@@ -3,6 +3,7 @@ import 'package:carguru/core/di/di.dart';
 import 'package:carguru/core/providers/locale_provider.dart';
 import 'package:carguru/helpar/routes_helper.dart';
 import 'package:carguru/presentation/features/onboarding/onboarding_cubit.dart';
+import 'package:carguru/presentation/features/faq/faq_cubit.dart';
 import 'package:carguru/utils/Dark_lightmode.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,27 +26,29 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => ChangeNotifierProvider(
-      create: (context) => LocaleProvider(),
-      builder: (context, child) {
-        final localeProvider = Provider.of<LocaleProvider>(context);
+        create: (context) => LocaleProvider(),
+        builder: (context, child) {
+          final localeProvider = Provider.of<LocaleProvider>(context);
 
-        return MultiProvider(
-          providers: [
-            ChangeNotifierProvider(create: (_) => ColorNotifire()),
-            BlocProvider<OnboardingCubit>(create: (_) => sl<OnboardingCubit>()),
-          ],
-          child: GetMaterialApp(
-            localizationsDelegates: AppLocalizations.localizationsDelegates,
-            supportedLocales: AppLocalizations.supportedLocales,
-            locale: localeProvider.locale,
-            debugShowCheckedModeBanner: false,
-            theme: ThemeData(
-              primarySwatch: Colors.blue,
-              fontFamily: "Gilroy",
+          return MultiBlocProvider(
+            providers: [
+              ChangeNotifierProvider(create: (_) => ColorNotifire()),
+              BlocProvider<FaqCubit>(create: (_) => sl<FaqCubit>()),
+              BlocProvider<OnboardingCubit>(create: (_) => sl<OnboardingCubit>()),
+            ],
+            child: GetMaterialApp(
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              supportedLocales: AppLocalizations.supportedLocales,
+              locale: localeProvider.locale,
+              debugShowCheckedModeBanner: false,
+              theme: ThemeData(
+                primarySwatch: Colors.blue,
+                fontFamily: "Gilroy",
+              ),
+              initialRoute: Routes.initial,
+              getPages: getPages,
             ),
-            initialRoute: Routes.initial,
-            getPages: getPages,
-          ),
-        );
-      });
+          );
+        },
+      );
 }

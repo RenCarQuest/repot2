@@ -1,4 +1,5 @@
 import 'package:carguru/core/l10n/extensions/app_localizations_context.dart';
+import 'package:carguru/presentation/features/faq/faq_screen.dart';
 import 'package:carguru/presentation/features/onboarding/onboarding_cubit.dart';
 import 'package:carguru/presentation/features/screen/login_flow/login_screen.dart';
 import 'package:carguru/utils/App_content.dart';
@@ -20,7 +21,6 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-
   PageController pageController = PageController();
   late ColorNotifire notifire;
 
@@ -184,7 +184,24 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   Widget _footerSection(int index, int lastIndex) {
     if (index != lastIndex) {
       return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          imageButton(
+            height: 30,
+            width: Get.size.width * 0.8,
+            spacing: 20,
+            image: Appcontent.question,
+            buttonText: context.localization.helpCenterFooterContactButton,
+            style: TextStyle(
+              fontFamily: FontFamily.gilroyMedium,
+              color: WhiteColor,
+              fontSize: 16,
+            ),
+            onTap: () {
+              Get.to(const FaqScreen());
+            },
+          ),
+          const SizedBox(height: 20),
           GestButton(
             height: 50,
             Width: Get.size.width,

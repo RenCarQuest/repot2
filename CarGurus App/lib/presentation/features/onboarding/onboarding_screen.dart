@@ -252,21 +252,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             border: Border.all(color: grey50),
             onTap: () {},
           ),
-          const SizedBox(height: 10),
-          imageButton(
-            height: 50,
-            width: Get.size.width,
-            margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-            image: Appcontent.apple,
-            buttonText: context.localization.onboardingAppleButton,
-            style: TextStyle(
-              fontFamily: FontFamily.gilroyMedium,
-              color: WhiteColor,
-              fontSize: 15,
-            ),
-            border: Border.all(color: grey50),
-            onTap: () {},
-          ),
         ],
       );
     }

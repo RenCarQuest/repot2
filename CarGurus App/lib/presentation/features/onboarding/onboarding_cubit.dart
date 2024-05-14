@@ -1,5 +1,6 @@
 import 'package:carguru/domain/models/onboarding/onboarding_model.dart';
 import 'package:carguru/domain/use_cases/onboarding/get_onboarding_use_case.dart';
+import 'package:flutter/widgets.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -18,9 +19,9 @@ class OnboardingCubit extends Cubit<OnboardingState> {
     emit(state.copyWith(currentPage: newIndex));
   }
 
-  Future<void> getOnboarding() async {
+  Future<void> getOnboarding(BuildContext context) async {
     emit(state.copyWith(isLoading: true));
-    final result = await _getOnboardingUseCase.invoke();
+    final result = await _getOnboardingUseCase.invoke(context);
     if (result.isFailure) {
       emit(state.copyWith(
         errorMessage: result.error.toString(),

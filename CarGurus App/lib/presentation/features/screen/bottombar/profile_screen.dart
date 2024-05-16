@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 import 'package:carguru/model/model.dart';
+import 'package:carguru/presentation/features/faq/faq_screen.dart';
 import 'package:carguru/presentation/features/screen/appointment/appointment_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
 import 'package:carguru/presentation/features/screen/mypurchases/mypurchases_screen.dart';
@@ -55,14 +56,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
         centerTitle: true,
         elevation: 0,
         leading: Icon(null),
-        title: Text("Profile", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: WhiteColor, fontSize: 16,),
+        title: Text(
+          "Profile",
+          style: TextStyle(
+            fontFamily: FontFamily.gilroyBold,
+            color: WhiteColor,
+            fontSize: 16,
+          ),
         ),
         actions: [
           GestureDetector(
-            onTap: () {
-              Get.to(SettingsScreen());
-            },
-              child: Image.asset("assets/settings.png", height: 25, width: 25,)),
+              onTap: () {
+                Get.to(SettingsScreen());
+              },
+              child: Image.asset(
+                "assets/settings.png",
+                height: 25,
+                width: 25,
+              )),
           SizedBox(width: 10),
         ],
       ),
@@ -86,10 +97,27 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       maxRadius: 50,
                       backgroundImage: AssetImage(Appcontent.profile),
                     ),
-                    SizedBox(height: 15,),
-                    Text("Alon musk", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 18, color: WhiteColor,),),
-                    SizedBox(height: 5,),
-                    Text("Buyer’s Account", style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 14, color: greyScale),),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      "Alon musk",
+                      style: TextStyle(
+                        fontFamily: FontFamily.gilroyBold,
+                        fontSize: 18,
+                        color: WhiteColor,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "Buyer’s Account",
+                      style: TextStyle(
+                          fontFamily: FontFamily.gilroyMedium,
+                          fontSize: 14,
+                          color: greyScale),
+                    ),
                     Spacer(),
                   ],
                 ),
@@ -117,10 +145,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         color: onbordingBlue,
                       ),
                       child: Center(
-                        child: Image.asset(Appcontent.shopping, height: 24, width: 24,),
+                        child: Image.asset(
+                          Appcontent.shopping,
+                          height: 24,
+                          width: 24,
+                        ),
                       ),
                     ),
-                    Text("My purchases", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 18, color: notifire.getwhiteblackcolor,),),
+                    Text(
+                      "My purchases",
+                      style: TextStyle(
+                        fontFamily: FontFamily.gilroyBold,
+                        fontSize: 18,
+                        color: notifire.getwhiteblackcolor,
+                      ),
+                    ),
                     Spacer(),
                     Container(
                       height: 16,
@@ -129,20 +168,45 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         borderRadius: BorderRadius.circular(100),
                         color: notifire.getwhiteblackcolor,
                       ),
-                      child: Center(child: Text("1", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 12, color: Colors.white,),)),
+                      child: Center(
+                          child: Text(
+                        "1",
+                        style: TextStyle(
+                          fontFamily: FontFamily.gilroyBold,
+                          fontSize: 12,
+                          color: Colors.white,
+                        ),
+                      )),
                     ),
-                    SizedBox(width: 15,),
-                    Icon(Icons.arrow_forward_ios, color: notifire.getwhiteblackcolor, size: 24,),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: notifire.getwhiteblackcolor,
+                      size: 24,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
                   ],
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 10),
-              child: Text("General", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: greyScale, fontSize: 15,),),
+              child: Text(
+                "General",
+                style: TextStyle(
+                  fontFamily: FontFamily.gilroyBold,
+                  color: greyScale,
+                  fontSize: 15,
+                ),
+              ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             ListView.builder(
               itemCount: model().imgList.length,
               shrinkWrap: true,
@@ -157,9 +221,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Get.to(TestdriveOrderScreen());
                     } else if (index == 2) {
                       Get.to(VoucherScreen());
-                    } else if(index == 3) {
-                    } else {
-                    }
+                    } else if (index == 3) {
+                      Get.to(FaqScreen());
+                    } else {}
                   },
                   child: Container(
                     height: 40,
@@ -181,9 +245,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ),
                         Expanded(
-                          child: Text(model().profileList[index], maxLines: 1, style: TextStyle(fontFamily: FontFamily.gilroyBold, color: notifire.getwhiteblackcolor, fontSize: 15, overflow: TextOverflow.ellipsis,),),
+                          child: Text(
+                            model().profileList[index],
+                            maxLines: 1,
+                            style: TextStyle(
+                              fontFamily: FontFamily.gilroyBold,
+                              color: notifire.getwhiteblackcolor,
+                              fontSize: 15,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
                         ),
-                        Image.asset("assets/chevron-right.png", height: 25, width: 25,),
+                        Image.asset(
+                          "assets/chevron-right.png",
+                          height: 25,
+                          width: 25,
+                        ),
                       ],
                     ),
                   ),
@@ -193,7 +270,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
             darkModeWidget(),
             Padding(
               padding: const EdgeInsets.only(left: 20, top: 10),
-              child: Text("Browse history", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: notifire.getwhiteblackcolor, fontSize: 15,),),
+              child: Text(
+                "Browse history",
+                style: TextStyle(
+                  fontFamily: FontFamily.gilroyBold,
+                  color: notifire.getwhiteblackcolor,
+                  fontSize: 15,
+                ),
+              ),
             ),
             SizedBox(
               height: 270,
@@ -210,7 +294,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       height: 270,
                       width: 228,
                       padding: EdgeInsets.symmetric(horizontal: 15),
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                      margin:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                       child: Column(
                         children: [
                           SizedBox(
@@ -236,8 +321,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             width: Get.size.width,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage(
-                                    "assets/audiCar.png"),
+                                image: AssetImage("assets/audiCar.png"),
                               ),
                             ),
                           ),
@@ -250,11 +334,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 child: Text(
                                   "Audi A8 Quattro",
                                   style: TextStyle(
-                                    fontFamily:
-                                    FontFamily.gilroyBold,
+                                    fontFamily: FontFamily.gilroyBold,
                                     fontSize: 15,
-                                    color: notifire
-                                        .getwhiteblackcolor,
+                                    color: notifire.getwhiteblackcolor,
                                   ),
                                 ),
                               ),
@@ -269,8 +351,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Text(
                                 "4.8",
                                 style: TextStyle(
-                                  fontFamily:
-                                  FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.gilroyMedium,
                                   color: greyScale,
                                   fontSize: 14,
                                 ),
@@ -299,8 +380,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Text(
                                 "Automatic",
                                 style: TextStyle(
-                                  fontFamily:
-                                  FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.gilroyMedium,
                                   color: greyScale,
                                   fontSize: 13,
                                 ),
@@ -309,8 +389,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Text(
                                 "\$112,150.00",
                                 style: TextStyle(
-                                  fontFamily:
-                                  FontFamily.gilroyBold,
+                                  fontFamily: FontFamily.gilroyBold,
                                   fontSize: 15,
                                   color: onbordingBlue,
                                 ),
@@ -321,8 +400,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        border: Border.all(
-                            color: notifire.getborderColor),
+                        border: Border.all(color: notifire.getborderColor),
                         color: notifire.getblackwhitecolor,
                       ),
                     ),

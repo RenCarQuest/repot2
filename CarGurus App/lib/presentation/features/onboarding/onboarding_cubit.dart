@@ -1,5 +1,5 @@
-import 'package:carguru/domain/models/onboarding_model.dart';
-import 'package:carguru/domain/user_cases/onboarding/get_onboarding_use_case.dart';
+import 'package:carguru/domain/models/onboarding/onboarding_model.dart';
+import 'package:carguru/domain/use_cases/onboarding/get_onboarding_use_case.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

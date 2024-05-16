@@ -43,5 +43,13 @@
     "faqTitle8": "¿Puedo rentar un automóvil en UTTIL para uso comercial o de negocio?",
     "faqAnswer8": "Si, UTTIL ofrece opciones para alquileres con uso comercial o de negocio; no obstante es importante revisar las políticas y restricciones específicas relacionadas con este tipo de alquiler en nuestra plataforma.",
     "faqTitle9": "¿Cómo puedo obtener descuentos si rento un automóvil con UTTIL?",
-    "faqAnswer9": "Los descuentos que ofrecemos pueden ser por varias razones: Descuentos por cantidad de tiempo de alquiler (a más tiempo, mayor el descuento), sistema de hitos por canitdades de alquiler en nuestra plataforma, si completas más de 20 rentas con nosotros, te daremos un 20% de descuento para tu siguiente renta."
+    "faqAnswer9": "Los descuentos que ofrecemos pueden ser por varias razones: Descuentos por cantidad de tiempo de alquiler (a más tiempo, mayor el descuento), sistema de hitos por canitdades de alquiler en nuestra plataforma, si completas más de 20 rentas con nosotros, te daremos un 20% de descuento para tu siguiente renta.",
+    "onboardingTitle1": "¡Bienvenido a Uttil!",
+    "onboardingBody1": "Encuentra el vehículo perfecto para tus necesidades de transporte con Uttil.\nYa sea un viaje corto o una aventura prolongada, estamos aquí para ayudarte a llegar a donde necesitas ir.",
+    "onboardingTitle2": "Encuentra tu vehículo ideal",
+    "onboardingBody2": "¡Hora de explorar la mejor flota de vehículos! Filtra por tipo de vehículo, ubicación y precio para encontrar la opción perfecta para tu próximo viaje.\n¡Conoce nuestras características avanzadas como navegación GPS, asientos para niños y más!",
+    "onboardingTitle3": "¡Reserva y disfruta!",
+    "onboardingBody3": "Una vez que hayas encontrado el vehículo perfecto, reserva con solo unos pocos clics. Selecciona las fechas y horarios deseados, revisa los detalles de tu reserva y confirma. ¡Listo! Recibirás una confirmación con todos los detalles de tu reserva.",
+    "onboardingTitle4": "Regístrate o inicia sesión",
+    "onboardingBody4": "Para comenzar a usar Uttil, necesitarás una cuenta. Si ya tienes una, simplemente inicia sesión. De lo contrario, regístrate con tu dirección de correo electrónico para empezar a explorar nuestra flota de vehículos disponibles."
 }

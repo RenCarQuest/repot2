@@ -49,5 +49,13 @@
     "faqTitle8": "Can I rent a car at UTTIL for commercial or business use?",
     "faqAnswer8": "Yes, UTTIL offers options for rentals with commercial or business use; however, it is important to review the specific policies and restrictions related to this type of rental on our platform.",
     "faqTitle9": "How can I get discounts if I rent a car with UTTIL?",
-    "faqAnswer9": "The discounts we offer can be for several reasons: Discounts by the amount of rental time (the longer the time, the greater the discount), milestone system for rental amounts on our platform, if you complete more than 20 rentals with us, we will give you a 20% discount for your next rental."
+    "faqAnswer9": "The discounts we offer can be for several reasons: Discounts by the amount of rental time (the longer the time, the greater the discount), milestone system for rental amounts on our platform, if you complete more than 20 rentals with us, we will give you a 20% discount for your next rental.",
+    "onboardingTitle1": "Welcome to Uttil!",
+    "onboardingBody1": "Find the perfect vehicle for your transportation needs with Uttil.\nWhether it's a short trip or an extended adventure, we're here to help you get where you need to go.",
+    "onboardingTitle2": "Find your ideal vehicle",
+    "onboardingBody2": "Time to explore the best fleet of vehicles! Filter by vehicle type, location, and price to find the perfect option for your next trip.\nCheck out our advanced features like GPS navigation, child seats, and more!",
+    "onboardingTitle3": "Reserve and enjoy!",
+    "onboardingBody3": "Once you've found the perfect vehicle, book with just a few clicks. Select your desired dates and times, review your reservation details and confirm. Ready! You will receive a confirmation with all the details of your reservation.",
+    "onboardingTitle4": "Register or log in",
+    "onboardingBody4": "To start using Uttil, you'll need an account. If you already have one, log in. Otherwise, sign up with your email address to start exploring our fleet of available vehicles."
 }

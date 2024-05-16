@@ -28,7 +28,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   void initState() {
     getDarkModePreviousState();
     super.initState();
-    context.read<OnboardingCubit>().getOnboarding();
+    context.read<OnboardingCubit>().getOnboarding(context);
   }
 
   @override

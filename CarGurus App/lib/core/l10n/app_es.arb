@@ -51,5 +51,14 @@
     "onboardingTitle3": "¡Reserva y disfruta!",
     "onboardingBody3": "Una vez que hayas encontrado el vehículo perfecto, reserva con solo unos pocos clics. Selecciona las fechas y horarios deseados, revisa los detalles de tu reserva y confirma. ¡Listo! Recibirás una confirmación con todos los detalles de tu reserva.",
     "onboardingTitle4": "Regístrate o inicia sesión",
-    "onboardingBody4": "Para comenzar a usar Uttil, necesitarás una cuenta. Si ya tienes una, simplemente inicia sesión. De lo contrario, regístrate con tu dirección de correo electrónico para empezar a explorar nuestra flota de vehículos disponibles."
+    "onboardingBody4": "Para comenzar a usar Uttil, necesitarás una cuenta. Si ya tienes una, simplemente inicia sesión. De lo contrario, regístrate con tu dirección de correo electrónico para empezar a explorar nuestra flota de vehículos disponibles.",
+    "onboardingEmailError": "Por favor ingrese su correo",
+    "onboardingPasswordError": "Por favor ingrese su contraseña",
+    "onboardingMissingInfoMsg": "Por favor, diligencie todos los campos",
+    "onboardingPasswordLengthError": "La contraseña debe tener más de 6 caracteres.\n",
+    "onboardingPasswordUppercaseError": "• Falta al menos una letra mayúscula.\n",
+    "onboardingPasswordLowercaseError": "• Falta al menos una letra minúscula.\n",
+    "onboardingPasswordDigitError": "• Falta al menos un dígito.\n",
+    "onboardingPasswordCharacterError": "• Falta al menos un caracter especial.\n",
+    "onboardingInvalidEmail": "Ingrese un correo electrónico válido"
 }

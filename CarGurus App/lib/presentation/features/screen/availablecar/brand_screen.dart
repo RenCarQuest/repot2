@@ -1,12 +1,12 @@
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/App_content.dart';
+import 'package:carguru/core/constants/App_content.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../controller/favorite_controller.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../controller/favorite_controller.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class BrandScreen extends StatefulWidget {
   const BrandScreen({super.key});
@@ -127,7 +127,7 @@ class _BrandScreenState extends State<BrandScreen> {
                                                    borderRadius: BorderRadius.circular(15),
                                                  ),
                                                  child: ListTile(
-                                                   leading: Image.asset('assets/modelcar.png', height: 98,),
+                                                   leading: Image.asset('assets/images/modelcar.png', height: 98,),
                                                    title: Text(title[index], style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, fontFamily: 'gilroyBold', color: notifire.getwhiteblackcolor),),
                                                    subtitle: Text(subtitle[index], style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, fontFamily: 'gilroyMedium', color: greyScale),),
                                                    trailing: Icon(Icons.arrow_forward_ios_rounded, size: 20, color: notifire.getwhiteblackcolor,),
@@ -229,7 +229,7 @@ class _BrandScreenState extends State<BrandScreen> {
                                       height: 90,
                                       width: 140,
                                       decoration: const BoxDecoration(
-                                        image: DecorationImage(image: AssetImage('assets/jeep.png'),),
+                                        image: DecorationImage(image: AssetImage('assets/images/jeep.png'),),
                                       ),
                                     ),
                                     const SizedBox(width: 10),
@@ -244,7 +244,7 @@ class _BrandScreenState extends State<BrandScreen> {
                                             children: [
                                               Text("Jeep", style: TextStyle(fontFamily:FontFamily.gilroyBold, fontSize: 15, color: greyScale,),),
                                               const Spacer(),
-                                              Image.asset("assets/star.png", height: 16, width: 16,),
+                                              Image.asset("assets/images/star.png", height: 16, width: 16,),
                                               Text("5.0", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                                             ],
                                           ),
@@ -258,11 +258,11 @@ class _BrandScreenState extends State<BrandScreen> {
                           const SizedBox(height: 4,),
                           Row(
                             children: [
-                              Image.asset("assets/engine.png", height: 20, width: 20,),
+                              Image.asset("assets/images/engine.png", height: 20, width: 20,),
                               const SizedBox(width: 4,),
                               Text("540 hp", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                               const SizedBox(width: 10,),
-                              Image.asset("assets/manual-gearbox.png", height: 20, width: 20,),
+                              Image.asset("assets/images/manual-gearbox.png", height: 20, width: 20,),
                               const SizedBox(width: 4,),
                               Text("Automatic", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                               const Spacer(),
@@ -303,7 +303,7 @@ class _BrandScreenState extends State<BrandScreen> {
                                  children: [
                                    Text("Jeep", style: TextStyle(fontFamily:FontFamily.gilroyBold, fontSize: 15, color: greyScale,),),
                                    const Spacer(),
-                                   Image.asset("assets/star.png", height: 16, width: 16,),
+                                   Image.asset("assets/images/star.png", height: 16, width: 16,),
                                    Text("5.0", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                                  ],
                                ),
@@ -311,7 +311,7 @@ class _BrandScreenState extends State<BrandScreen> {
                                  height: 90,
                                  width: 124,
                                  decoration: const BoxDecoration(
-                                   image: DecorationImage(image: AssetImage('assets/jeep.png'),),
+                                   image: DecorationImage(image: AssetImage('assets/images/jeep.png'),),
                                  ),
                                ),
                                Text("Jeep Rubicon", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 12, color: notifire.getwhiteblackcolor,),),

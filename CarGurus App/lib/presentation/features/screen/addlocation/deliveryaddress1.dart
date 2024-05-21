@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable, prefer_interpolation_to_compose_strings, avoid_print, prefer_const_literals_to_create_immutables, sort_child_properties_last, prefer_typing_uninitialized_variables
-import 'package:carguru/controller/addlocation_controller.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/presentation/controller/addlocation_controller.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
@@ -122,7 +122,7 @@ class _DeliveryAddress1State extends State<DeliveryAddress1> {
                     Padding(
                       padding: const EdgeInsets.all(10),
                       child: Image.asset(
-                        "assets/Search.png",
+                        "assets/images/Search.png",
                         height: 20,
                         width: 20,
                         color: Color(0xFF636268),
@@ -175,7 +175,7 @@ class _DeliveryAddress1State extends State<DeliveryAddress1> {
               child: Row(
                 children: [
                   Image.asset(
-                    "assets/location-crosshairs.png",
+                    "assets/images/location-crosshairs.png",
                     height: 25,
                     width: 25,
                     color: notifire.getwhiteblackcolor,

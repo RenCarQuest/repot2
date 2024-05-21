@@ -1,9 +1,9 @@
 import '../../../core/l10n/extensions/app_localizations_context.dart';
 import '../../../domain/models/faq/faq_model.dart';
 import '../../../presentation/features/faq/help_footer_widget.dart';
-import '../../../utils/App_content.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/App_content.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';

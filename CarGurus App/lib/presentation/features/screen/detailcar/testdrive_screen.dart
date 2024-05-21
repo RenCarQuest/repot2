@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, unused_field, avoid_print, sort_child_properties_last, prefer_const_literals_to_create_immutables
 import 'package:carguru/presentation/features/screen/bottombar/bottombar_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -59,7 +59,7 @@ class _TestDriveScreenState extends State<TestDriveScreen> {
             height: 40,
             width: 40,
             padding: EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         title: Text("Schedule a test drive", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 15, color: notifire.getwhiteblackcolor,),),
@@ -77,7 +77,7 @@ class _TestDriveScreenState extends State<TestDriveScreen> {
                   child: Column(
                     children: [
                       SizedBox(height: 50,),
-                      Image.asset('assets/EmptyState.png', height: 96, width: 96,),
+                      Image.asset('assets/images/EmptyState.png', height: 96, width: 96,),
                       Spacer(),
                       Text("Thank you !", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 24, color: notifire.getwhiteblackcolor,),),
                       SizedBox(height: 15,),
@@ -128,8 +128,8 @@ class _TestDriveScreenState extends State<TestDriveScreen> {
                     color: notifire.getwhiteblackcolor,
                     fontSize: 15,
                   ),
-                  leftChevronIcon: Image.asset("assets/chevron-left.png", height: 20, width: 20,),
-                  rightChevronIcon: Image.asset("assets/chevron-right.png", height: 20, width: 20),
+                  leftChevronIcon: Image.asset("assets/images/chevron-left.png", height: 20, width: 20,),
+                  rightChevronIcon: Image.asset("assets/images/chevron-right.png", height: 20, width: 20),
                 ),
                 daysOfWeekStyle: DaysOfWeekStyle(
                   weekdayStyle: TextStyle(
@@ -224,7 +224,7 @@ class _TestDriveScreenState extends State<TestDriveScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Image.asset(
-                            "assets/map-pin.png",
+                            "assets/images/map-pin.png",
                             height: 25,
                             width: 25,
                             color: notifire.getwhiteblackcolor,

@@ -17,15 +17,15 @@ class model {
   ];
 
   List<String> imgList = [
-    "assets/appointment.png",
-    "assets/testDrive.png",
-    "assets/global.png",
-    "assets/question-circle-outlined.png"
+    "assets/images/appointment.png",
+    "assets/images/testDrive.png",
+    "assets/images/global.png",
+    "assets/images/question-circle-outlined.png"
   ];
 
   List<String> img = [
-    'assets/sLogo.png',
-    'assets/logo.png',
+    'assets/images/sLogo.png',
+    'assets/images/logo.png',
   ];
   List text = [
     'Discount Available',

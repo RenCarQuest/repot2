@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class Brand1Screen extends StatefulWidget {
   const Brand1Screen({super.key});

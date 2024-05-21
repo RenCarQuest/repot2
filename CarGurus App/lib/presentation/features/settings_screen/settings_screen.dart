@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../utils/Dark_lightmode.dart';
+import '../../../core/utils/Dark_lightmode.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

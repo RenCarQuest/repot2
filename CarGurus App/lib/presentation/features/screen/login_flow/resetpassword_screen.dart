@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, must_be_immutable
 
-import 'package:carguru/helpar/routes_helper.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/helpar/routes_helper.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -100,7 +100,7 @@ class ResetPasswordScreen extends StatelessWidget {
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(6),
                     child: Image.asset(
-                      "assets/x.png",
+                      "assets/images/x.png",
                       color: notifire.getwhiteblackcolor,
                     ),
                   ),
@@ -112,7 +112,7 @@ class ResetPasswordScreen extends StatelessWidget {
                   height: 100,
                   width: Get.size.width,
                   alignment: Alignment.center,
-                  child: Image.asset("assets/EmptyPassword.png"),
+                  child: Image.asset("assets/images/EmptyPassword.png"),
                 ),
                 SizedBox(
                   height: 10,
@@ -155,7 +155,7 @@ class ResetPasswordScreen extends StatelessWidget {
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(12),
                     child: Image.asset(
-                      "assets/mail.png",
+                      "assets/images/mail.png",
                       height: 25,
                       width: 25,
                       color: greyColor,

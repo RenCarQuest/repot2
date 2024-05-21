@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

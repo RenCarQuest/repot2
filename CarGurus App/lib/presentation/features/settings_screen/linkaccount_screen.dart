@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/Colors.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class LinkaccountScreen extends StatefulWidget {
   const LinkaccountScreen({super.key});
@@ -21,9 +21,9 @@ class _LinkaccountScreenState extends State<LinkaccountScreen> {
     onbordingBlue,
   ];
   List img = [
-    'assets/google.png',
-    'assets/apple.png',
-    'assets/twiter.png',
+    'assets/images/google.png',
+    'assets/images/apple.png',
+    'assets/images/twiter.png',
   ];
   List text = [
     'Login with Google',
@@ -67,7 +67,7 @@ class _LinkaccountScreenState extends State<LinkaccountScreen> {
             width: 40,
             alignment: Alignment.center,
             padding: const EdgeInsets.all(13),
-            child: Image.asset("assets/back.png", color: WhiteColor,),
+            child: Image.asset("assets/images/back.png", color: WhiteColor,),
           ),
         ),
         title: Text("Link account", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: WhiteColor, fontSize: 16,),),
@@ -92,7 +92,7 @@ class _LinkaccountScreenState extends State<LinkaccountScreen> {
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30),
-                    child: Image.asset("assets/jeep.png"),
+                    child: Image.asset("assets/images/jeep.png"),
                   ),
                 ),
                 const SizedBox(height: 15,),

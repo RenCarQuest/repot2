@@ -4,9 +4,9 @@ import 'package:carguru/presentation/features/screen/bottombar/favorite_screen.d
 import 'package:carguru/presentation/features/screen/bottombar/home_screen.dart';
 import 'package:carguru/presentation/features/screen/bottombar/message_screen.dart';
 import 'package:carguru/presentation/features/screen/bottombar/profile_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -70,24 +70,24 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/homeOutline.png",
+              "assets/images/homeOutline.png",
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/homeBold.png",
+              "assets/images/homeBold.png",
               height: MediaQuery.of(context).size.height / 35,
             ),
             label: 'Home'.tr,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/favoriteOutline.png",
+              "assets/images/favoriteOutline.png",
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/fevoriteBold.png",
+              "assets/images/fevoriteBold.png",
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),
@@ -95,12 +95,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/messageOutline.png",
+              "assets/images/messageOutline.png",
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/messageBold.png",
+              "assets/images/messageBold.png",
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),
@@ -108,12 +108,12 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/profileOutline.png",
+              "assets/images/profileOutline.png",
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/profileBold.png",
+              "assets/images/profileBold.png",
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),

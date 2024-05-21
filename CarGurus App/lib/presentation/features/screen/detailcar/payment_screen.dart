@@ -1,13 +1,13 @@
 import 'package:carguru/presentation/features/screen/detailcar/paymethod_screen.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Custom_widget.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Custom_widget.dart';
 
 class PaymentsScreen extends StatefulWidget {
   const PaymentsScreen({super.key});
@@ -35,7 +35,7 @@ class _PaymentScreenState extends State<PaymentsScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,
@@ -140,7 +140,7 @@ class _PaymentScreenState extends State<PaymentsScreen> {
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 5),
-                            child: Image.asset('assets/Visa Inc. svg.png'),
+                            child: Image.asset('assets/images/Visa Inc. svg.png'),
                           ),
                         ),
                       ),
@@ -171,7 +171,7 @@ class _PaymentScreenState extends State<PaymentsScreen> {
                     enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: notifire.getblackwhitecolor)),
                     prefixIcon: Padding(
                       padding: const EdgeInsets.all(10),
-                      child: Image.asset('assets/card1.png',),
+                      child: Image.asset('assets/images/card1.png',),
                     ),
                     hintText: '0000 0000 0000 0000',
                     hintStyle: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 14, color: greyScale,),

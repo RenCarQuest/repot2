@@ -1,8 +1,8 @@
 import 'package:carguru/presentation/features/screen/detailcar/track2_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -57,7 +57,7 @@ class _TrackScreenState extends State<TrackScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,

@@ -1,11 +1,11 @@
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Custom_widget.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/utils/Custom_widget.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 import '../bottombar/bottombar_screen.dart';
 
 class InterestScreen extends StatefulWidget {

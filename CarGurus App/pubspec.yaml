@@ -85,28 +85,28 @@ flutter:
   generate: true
   uses-material-design: true
   assets:
-    - assets/
+    - assets/images/
     - config/
 
   fonts:
     - family: Gilroy Black
       fonts:
-        - asset: fonts/Gilroy-Black.otf
+        - asset: assets/fonts/Gilroy-Black.otf
     - family: Gilroy Light
       fonts:
-        - asset: fonts/Gilroy-Light.otf
+        - asset: assets/fonts/Gilroy-Light.otf
     - family: Gilroy Heavy
       fonts:
-        - asset: fonts/Gilroy-Heavy.otf
+        - asset: assets/fonts/Gilroy-Heavy.otf
     - family: Gilroy Medium
       fonts:
-        - asset: fonts/Gilroy-Medium.otf
+        - asset: assets/fonts/Gilroy-Medium.otf
     - family: Gilroy Bold
       fonts:
-        - asset: fonts/Gilroy-Bold.otf
+        - asset: assets/fonts/Gilroy-Bold.otf
     - family: Gilroy ExtraBold
       fonts:
-        - asset: fonts/Gilroy-ExtraBold.otf
+        - asset: assets/fonts/Gilroy-ExtraBold.otf
     - family: Gilroy Regular
       fonts:
-        - asset: fonts/Gilroy-Regular.otf
+        - asset: assets/fonts/Gilroy-Regular.otf

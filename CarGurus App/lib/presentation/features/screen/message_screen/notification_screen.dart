@@ -1,10 +1,10 @@
-import 'package:carguru/model/model.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/data/model/model.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Dark_lightmode.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
 
 class NotificationScreen extends StatefulWidget {
   const NotificationScreen({super.key});

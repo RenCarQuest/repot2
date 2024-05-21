@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/Custom_widget.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/utils/Custom_widget.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class NewPaymentScreen extends StatefulWidget {
   const NewPaymentScreen({super.key});
@@ -37,7 +37,7 @@ class _NewPaymentScreenState extends State<NewPaymentScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         title: Text("New payment", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 18, color: notifire.getwhiteblackcolor,),),
@@ -65,7 +65,7 @@ class _NewPaymentScreenState extends State<NewPaymentScreen> {
                     color: Colors.blueAccent.withOpacity(0.50),
                   ),
                   child: Center(
-                    child: Image.asset('assets/paypal.png', height: 24, width: 24,),
+                    child: Image.asset('assets/images/paypal.png', height: 24, width: 24,),
                   ),
                 ),
               ),
@@ -93,7 +93,7 @@ class _NewPaymentScreenState extends State<NewPaymentScreen> {
                    enabledBorder: OutlineInputBorder(borderSide: BorderSide(color: notifire.getblackwhitecolor)),
                    prefixIcon: Padding(
                      padding: const EdgeInsets.all(10),
-                     child: Image.asset('assets/card1.png',),
+                     child: Image.asset('assets/images/card1.png',),
                    ),
                    hintText: '0000 0000 0000 0000',
                    hintStyle: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 14, color: greyScale,),

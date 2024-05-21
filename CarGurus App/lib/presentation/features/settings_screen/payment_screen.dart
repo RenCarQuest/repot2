@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:carguru/presentation/features/settings_screen/newpayment_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class PaymentScreen extends StatefulWidget {
   const PaymentScreen({super.key});
@@ -23,9 +23,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
     const Color(0xffF9FAFB),
   ];
   List img = [
-    'assets/apple.png',
-    'assets/paypal.png',
-    'assets/google.png',
+    'assets/images/apple.png',
+    'assets/images/paypal.png',
+    'assets/images/google.png',
   ];
   List text = [
     'Apple Pay',
@@ -49,7 +49,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         title: Text("Payment method", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 18, color: notifire.getwhiteblackcolor,),),

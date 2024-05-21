@@ -1,17 +1,17 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers, unused_field, sized_box_for_whitespace
-import 'package:carguru/controller/cardetails_controller.dart';
+import 'package:carguru/presentation/controller/cardetails_controller.dart';
 import 'package:carguru/presentation/features/screen/detailcar/360_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/detailsviewall_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/buycardetails_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../utils/App_content.dart';
+import '../../../../core/constants/App_content.dart';
 
 class CarDetailsScreen extends StatefulWidget {
   const CarDetailsScreen({super.key});
@@ -77,13 +77,13 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
             height: 40,
             width: 40,
             padding: EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: greyScale,),
+            child: Image.asset("assets/images/back.png", color: greyScale,),
           ),
         ),
         actions: [
-          Image.asset("assets/favoriteOutline.png", height: 25, width: 25, color: greyScale,),
+          Image.asset("assets/images/favoriteOutline.png", height: 25, width: 25, color: greyScale,),
           SizedBox(width: 18),
-          Image.asset("assets/share-two.png", height: 25, width: 25, color: greyScale),
+          Image.asset("assets/images/share-two.png", height: 25, width: 25, color: greyScale),
           SizedBox(width: 20),
         ],
       ),
@@ -141,7 +141,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       width: Get.size.width,
                       alignment: Alignment.center,
                       padding: EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 45),
-                      child: Image.asset("assets/car2.png"),
+                      child: Image.asset("assets/images/car2.png"),
                       decoration: BoxDecoration(
                         color: Color(0xFF0F172A),
                       ),
@@ -213,7 +213,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                             height: 80,
                             width: 110,
                             margin: EdgeInsets.all(5),
-                            child: Image.asset("assets/porche.png"),
+                            child: Image.asset("assets/images/porche.png"),
                             decoration: BoxDecoration(
                               border:
                                   Border.all(color: notifire.getborderColor),
@@ -236,7 +236,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              "assets/box.png",
+                              "assets/images/box.png",
                               height: 20,
                               width: 20,
                             ),
@@ -281,7 +281,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset("assets/engine.png", height: 30, width: 30, color: notifire.getwhiteblackcolor,),
+                          Image.asset("assets/images/engine.png", height: 30, width: 30, color: notifire.getwhiteblackcolor,),
                           SizedBox(height: 10),
                           Text.rich(
                             TextSpan(
@@ -311,7 +311,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
-                            "assets/dashboard.png",
+                            "assets/images/dashboard.png",
                             height: 30,
                             width: 30,
                             color: notifire.getwhiteblackcolor,
@@ -370,7 +370,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(
-                            "assets/clock.png",
+                            "assets/images/clock.png",
                             height: 30,
                             width: 30,
                             color: notifire.getwhiteblackcolor,
@@ -596,7 +596,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       SizedBox(height: 8,),
                       Padding(
                         padding: const EdgeInsets.only(left: 15),
-                        child: Image.asset("assets/engine.png", height: 25, width: 25,),
+                        child: Image.asset("assets/images/engine.png", height: 25, width: 25,),
                       ),
                       Spacer(),
                       Text("Engine displacement", style: TextStyle(color: greyScale1, fontFamily: FontFamily.gilroyMedium, fontSize: 12,),),
@@ -635,7 +635,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 15),
                         child: Image.asset(
-                          "assets/dashboard.png",
+                          "assets/images/dashboard.png",
                           height: 25,
                           width: 25,
                           color: greyScale1,
@@ -696,7 +696,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/bluetooth.png",
+                          "assets/images/bluetooth.png",
                           height: 30,
                           width: 30,
                         ),
@@ -750,7 +750,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
           Container(
             height: 180,
             width: Get.size.width,
-            child: Image.asset("assets/Image.png", fit: BoxFit.fill,),
+            child: Image.asset("assets/images/Image.png", fit: BoxFit.fill,),
           ),
           SizedBox(height: 10,),
         ],
@@ -781,7 +781,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       height: 50,
                       width: 50,
                       padding: EdgeInsets.all(11),
-                      child: Image.asset("assets/dollar-circle.png"),
+                      child: Image.asset("assets/images/dollar-circle.png"),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                       ),
@@ -894,7 +894,7 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                     children: [
                       Row(
                         children: [
-                          CircleAvatar(backgroundImage: AssetImage('assets/artist-1 1.png')),
+                          CircleAvatar(backgroundImage: AssetImage('assets/images/artist-1 1.png')),
                           SizedBox(width: 10,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -911,15 +911,15 @@ class _CarDetailsScreenState extends State<CarDetailsScreen> {
                       Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.", style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 12, fontWeight: FontWeight.w500, color: greyScale1)),
                       Row(
                         children: [
-                          Image.asset('assets/like.png', height: 20, width: 20,),
+                          Image.asset('assets/images/like.png', height: 20, width: 20,),
                           SizedBox(width: 10,),
                           Text('100', style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 12, fontWeight: FontWeight.w500, color: greyScale1)),
                           SizedBox(width: 15,),
-                          Image.asset('assets/dislike.png', height: 20, width: 20,),
+                          Image.asset('assets/images/dislike.png', height: 20, width: 20,),
                           SizedBox(width: 10,),
                           Text('12', style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 12, fontWeight: FontWeight.w500, color: greyScale1)),
                           Spacer(),
-                          Image.asset('assets/share-two.png', height: 20, width: 20,),
+                          Image.asset('assets/images/share-two.png', height: 20, width: 20,),
                         ],
                       ),
                     ],

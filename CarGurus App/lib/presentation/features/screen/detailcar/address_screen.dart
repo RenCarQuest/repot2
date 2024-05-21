@@ -1,15 +1,15 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
-import 'package:carguru/model/model.dart';
+import 'package:carguru/data/model/model.dart';
 import 'package:carguru/presentation/features/screen/detailcar/payment_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
+import '../../../../core/constants/App_content.dart';
 
 class AddressScreen extends StatefulWidget {
   const AddressScreen({super.key});
@@ -41,7 +41,7 @@ class _AddressScreenState extends State<AddressScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor),
           ),
         ),
         centerTitle: true,

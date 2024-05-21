@@ -1,9 +1,9 @@
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Dark_lightmode.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
 
 class ChatScreen extends StatefulWidget {
   final String image;
@@ -21,12 +21,12 @@ class _ChatScreenState extends State<ChatScreen> {
   TextEditingController message = TextEditingController();
 
   List img = [
-    'assets/chat1.png',
-    'assets/chat2.png',
-    'assets/chat3.png',
-    'assets/chat4.png',
-    'assets/chat5.png',
-    'assets/chat6.png',
+    'assets/images/chat1.png',
+    'assets/images/chat2.png',
+    'assets/images/chat3.png',
+    'assets/images/chat4.png',
+    'assets/images/chat5.png',
+    'assets/images/chat6.png',
   ];
   List text = [
     'Camera',
@@ -52,7 +52,7 @@ class _ChatScreenState extends State<ChatScreen> {
               height: 36,
               width: 36,
               decoration: BoxDecoration(
-                  image: const DecorationImage(image: AssetImage('assets/05.png',),),
+                  image: const DecorationImage(image: AssetImage('assets/images/05.png',),),
                   borderRadius: BorderRadius.circular(100)),
             ),
             title: SizedBox(
@@ -198,7 +198,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     height: 173,
                     width: Get.size.width,
                     decoration: BoxDecoration(
-                        image: const DecorationImage(image: AssetImage('assets/05.png',), fit: BoxFit.fill),
+                        image: const DecorationImage(image: AssetImage('assets/images/05.png',), fit: BoxFit.fill),
                         borderRadius: BorderRadius.circular(100)),
                   ),
                 ),
@@ -229,7 +229,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     height: 173,
                     width: Get.size.width,
                     decoration: BoxDecoration(
-                        image: const DecorationImage(image: AssetImage('assets/05.png',), fit: BoxFit.fill),
+                        image: const DecorationImage(image: AssetImage('assets/images/05.png',), fit: BoxFit.fill),
                         borderRadius: BorderRadius.circular(100)),
                   ),
                 ),
@@ -251,7 +251,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     height: 173,
                     width: Get.size.width,
                     decoration: BoxDecoration(
-                        image: const DecorationImage(image: AssetImage('assets/02.png',), fit: BoxFit.fill),
+                        image: const DecorationImage(image: AssetImage('assets/images/02.png',), fit: BoxFit.fill),
                         borderRadius: BorderRadius.circular(100)),
                   ),
                 ),

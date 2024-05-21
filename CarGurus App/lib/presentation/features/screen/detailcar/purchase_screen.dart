@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last, prefer_const_literals_to_create_immutables
-import 'package:carguru/controller/carpurchase_controller.dart';
+import 'package:carguru/presentation/controller/carpurchase_controller.dart';
 import 'package:carguru/presentation/features/screen/detailcar/credit_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -61,7 +61,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
             height: 40,
             width: 40,
             padding: EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,
@@ -101,17 +101,17 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(height: 10,),
-                            Image.asset("assets/Audi.png", height: 25, width: 50, color: onbordingBlue,),
+                            Image.asset("assets/images/Audi.png", height: 25, width: 50, color: onbordingBlue,),
                             SizedBox(height: 5),
                             Text("Audi Q7 50 Quattro", maxLines: 1, style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 18, overflow: TextOverflow.ellipsis, color: notifire.getwhiteblackcolor,),),
                             SizedBox(height: 10,),
                             Row(
                               children: [
-                                Image.asset("assets/engine.png", height: 20, width: 20,),
+                                Image.asset("assets/images/engine.png", height: 20, width: 20,),
                                 SizedBox(width: 4,),
                                 Text("335 hp", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                                 SizedBox(width: 10,),
-                                Image.asset("assets/manual-gearbox.png", height: 20, width: 20,),
+                                Image.asset("assets/images/manual-gearbox.png", height: 20, width: 20,),
                                 SizedBox(width: 4,),
                                 Text("Automatic", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 13,),),
                               ],
@@ -123,7 +123,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                         height: 130,
                         width: Get.size.width * 0.35,
                         padding: EdgeInsets.all(2),
-                        child: Image.asset("assets/Imageaudi.png"),
+                        child: Image.asset("assets/images/Imageaudi.png"),
                       ),
                     ],
                   ),
@@ -134,7 +134,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                   children: [
                     Text("Your purchase method", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: notifire.getwhiteblackcolor, fontSize: 15,),),
                     SizedBox(width: 8),
-                    Image.asset("assets/question-circle.png", height: 20, width: 20,),
+                    Image.asset("assets/images/question-circle.png", height: 20, width: 20,),
                   ],
                 ),
                 SizedBox(height: 8,),
@@ -161,7 +161,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                                 width: 50,
                                 alignment: Alignment.center,
                                 child: Image.asset(
-                                  index == 0 ? "assets/card.png" : index == 1 ? "assets/dollar-circle.png" : "assets/card.png",
+                                  index == 0 ? "assets/images/card.png" : index == 1 ? "assets/images/dollar-circle.png" : "assets/images/card.png",
                                   color: carPurchaseController.currentIndex == index ? WhiteColor : notifire.getwhiteblackcolor,
                                   height: 25,
                                   width: 25,
@@ -245,7 +245,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                                     height: 25,
                                     width: 25,
                                     alignment: Alignment.center,
-                                    child: Image.asset("assets/circle-check.png",),
+                                    child: Image.asset("assets/images/circle-check.png",),
                                   ),
                                   SizedBox(width: 10),
                                   Text(carguruList[index], style: TextStyle(color: notifire.getwhiteblackcolor, fontFamily: FontFamily.gilroyMedium,),),

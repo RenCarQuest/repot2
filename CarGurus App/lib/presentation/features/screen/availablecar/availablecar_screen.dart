@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
-import 'package:carguru/controller/favorite_controller.dart';
+import 'package:carguru/presentation/controller/favorite_controller.dart';
 import 'package:carguru/presentation/features/screen/availablecar/filter_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -99,7 +99,7 @@ class _AvailablecarScreenState extends State<AvailablecarScreen> {
                           children: [
                             Text(text[index], style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 15, color: notifire.getwhiteblackcolor,),),
                             SizedBox(width: 5,),
-                            index == 1 ? Image.asset("assets/chevron-down.png", height: 15, width: 15, color: notifire.getwhiteblackcolor,) : SizedBox(),
+                            index == 1 ? Image.asset("assets/images/chevron-down.png", height: 15, width: 15, color: notifire.getwhiteblackcolor,) : SizedBox(),
                           ],
                         ),
                         decoration: BoxDecoration(
@@ -135,7 +135,7 @@ class _AvailablecarScreenState extends State<AvailablecarScreen> {
                                         height: 90,
                                         width: 140,
                                         decoration: BoxDecoration(
-                                          image: DecorationImage(image: AssetImage('assets/jeep.png'),),
+                                          image: DecorationImage(image: AssetImage('assets/images/jeep.png'),),
                                         ),
                                       ),
                                       SizedBox(
@@ -151,7 +151,7 @@ class _AvailablecarScreenState extends State<AvailablecarScreen> {
                                               children: [
                                                 Text("Jeep", style: TextStyle(fontFamily:FontFamily.gilroyBold, fontSize: 15, color: greyScale1,),),
                                                 Spacer(),
-                                                Image.asset("assets/star.png", height: 16, width: 16,),
+                                                Image.asset("assets/images/star.png", height: 16, width: 16,),
                                                 Text("5.0", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                               ],
                                             ),
@@ -165,11 +165,11 @@ class _AvailablecarScreenState extends State<AvailablecarScreen> {
                                   SizedBox(height: 4,),
                                   Row(
                                     children: [
-                                      Image.asset("assets/engine.png", height: 20, width: 20,),
+                                      Image.asset("assets/images/engine.png", height: 20, width: 20,),
                                       SizedBox(width: 4,),
                                       Text("540 hp", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                       SizedBox(width: 10,),
-                                      Image.asset("assets/manual-gearbox.png", height: 20, width: 20,),
+                                      Image.asset("assets/images/manual-gearbox.png", height: 20, width: 20,),
                                       SizedBox(width: 4,),
                                       Text("Automatic", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                       Spacer(),

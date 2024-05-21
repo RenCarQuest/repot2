@@ -1,4 +1,4 @@
-import '../core/l10n/extensions/app_localizations_context.dart';
+import '../l10n/extensions/app_localizations_context.dart';
 import 'package:flutter/material.dart';
 
 class Validator {

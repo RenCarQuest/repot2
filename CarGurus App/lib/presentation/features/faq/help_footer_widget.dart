@@ -1,7 +1,7 @@
 import '../../../core/l10n/extensions/app_localizations_context.dart';
-import '../../../utils/App_content.dart';
-import '../../../utils/Colors.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/App_content.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 
 class HelpFooterWidget extends StatelessWidget {

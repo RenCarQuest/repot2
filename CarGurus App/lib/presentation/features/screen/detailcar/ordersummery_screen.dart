@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
 import 'package:carguru/presentation/features/screen/detailcar/address_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -45,7 +45,7 @@ class _OrderSummeryScreenState extends State<OrderSummeryScreen> {
             height: 40,
             width: 40,
             padding: EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,
@@ -77,7 +77,7 @@ class _OrderSummeryScreenState extends State<OrderSummeryScreen> {
                     SizedBox(
                       width: 8,
                     ),
-                    Image.asset("assets/question-circle.png", height: 25, width: 25,),
+                    Image.asset("assets/images/question-circle.png", height: 25, width: 25,),
                   ],
                 ),
                 SizedBox(
@@ -127,7 +127,7 @@ class _OrderSummeryScreenState extends State<OrderSummeryScreen> {
                       Row(
                         children: [
                           SizedBox(width: 15,),
-                          Image.asset("assets/shield-check.png", height: 20, width: 20,),
+                          Image.asset("assets/images/shield-check.png", height: 20, width: 20,),
                           Spacer(),
                           Text("Money-back guarantee if the car fails the\ninspection.", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: Color(0xFF22C55E), fontSize: 14,),),
                           Spacer(),
@@ -146,7 +146,7 @@ class _OrderSummeryScreenState extends State<OrderSummeryScreen> {
                           SizedBox(width: 15,),
                           Text("See details", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 15, color: notifire.getwhiteblackcolor,),),
                           Spacer(),
-                          Image.asset("assets/chevron-right.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                          Image.asset("assets/images/chevron-right.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                           SizedBox(width: 15,),
                         ],
                       ),

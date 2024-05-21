@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'dart:ui' as ui;
-import 'package:carguru/controller/addlocation_controller.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/presentation/controller/addlocation_controller.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -55,7 +55,7 @@ class _AddressDetailsScreenState extends State<AddressDetailsScreen> {
   }
 
   loadData() async {
-    final Uint8List markIcons = await getImages("assets/MapPin.png", 100);
+    final Uint8List markIcons = await getImages("assets/images/MapPin.png", 100);
     // makers added according to index
     _markers.add(
       Marker(
@@ -215,7 +215,7 @@ class _AddressDetailsScreenState extends State<AddressDetailsScreen> {
                             Row(
                               children: [
                                 Image.asset(
-                                  "assets/location-crosshairs.png",
+                                  "assets/images/location-crosshairs.png",
                                   height: 20,
                                   width: 20,
                                   color: onbordingBlue,

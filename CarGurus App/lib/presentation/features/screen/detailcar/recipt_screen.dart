@@ -1,11 +1,11 @@
 import 'package:carguru/presentation/features/screen/detailcar/track_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Dark_lightmode.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
 
 class ReciptScreen extends StatefulWidget {
   const ReciptScreen({super.key});
@@ -52,7 +52,7 @@ class _ReciptScreenState extends State<ReciptScreen> {
                   ),
                   child: Column(
                     children: [
-                      Image.asset('assets/modelcar.png'),
+                      Image.asset('assets/images/modelcar.png'),
                       Image.asset(Appcontent.audi, color: onbordingBlue, width: 50,),
                       Text('Audi Q7 50 Quattro', style: TextStyle(fontFamily: FontFamily.gilroyBold, fontWeight: FontWeight.w700, fontSize: 18, color: notifire.getwhiteblackcolor),),
                       Text('Receipt #1998-4442', style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontWeight: FontWeight.w500, fontSize: 12, color: greyScale1),),

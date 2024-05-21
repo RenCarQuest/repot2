@@ -1,12 +1,12 @@
 import 'package:carguru/presentation/features/screen/login_flow/enablefinger_screen.dart';
-import 'package:carguru/utils/App_content.dart';
+import 'package:carguru/core/constants/App_content.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Custom_widget.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Custom_widget.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class Enablefacescreen extends StatefulWidget {
   const Enablefacescreen({super.key});

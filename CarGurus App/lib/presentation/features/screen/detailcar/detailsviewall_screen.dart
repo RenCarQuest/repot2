@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, unused_field, unnecessary_null_comparison, unnecessary_new, library_private_types_in_public_api
 
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +54,7 @@ class _DetailsViewAllState extends State<DetailsViewAll>
             width: 40,
             padding: EdgeInsets.all(12),
             child: Image.asset(
-              "assets/back.png",
+              "assets/images/back.png",
               color: notifire.getwhiteblackcolor,
             ),
           ),
@@ -167,7 +167,7 @@ class _DetailsViewAllState extends State<DetailsViewAll>
           width: Get.size.width,
           margin: EdgeInsets.all(10),
           child: Image.asset(
-            "assets/Image.png",
+            "assets/images/Image.png",
             fit: BoxFit.fill,
           ),
         );

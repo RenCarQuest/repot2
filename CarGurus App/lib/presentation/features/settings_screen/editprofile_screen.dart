@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/App_content.dart';
-import '../../../utils/Colors.dart';
-import '../../../utils/Custom_widget.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/App_content.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/Custom_widget.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class EditScreen extends StatefulWidget {
   const EditScreen({super.key});
@@ -87,7 +87,7 @@ class _EditScreenState extends State<EditScreen> {
                   hintStyle: TextStyle(fontFamily: 'gilroyMedium', fontWeight: FontWeight.w500, fontSize: 16, color: greyScale1),
                   prefixIcon: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: Image.asset('assets/profileOutline.png', height: 24, width: 24,color: greyScale1),
+                    child: Image.asset('assets/images/profileOutline.png', height: 24, width: 24,color: greyScale1),
                   ),
                 ),
               ),

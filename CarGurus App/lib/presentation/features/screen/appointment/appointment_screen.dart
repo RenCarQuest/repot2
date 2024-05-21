@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../utils/App_content.dart';
+import '../../../../core/constants/App_content.dart';
 
 class AppointmentScreen extends StatefulWidget {
   const AppointmentScreen({super.key});
@@ -51,7 +51,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
             height: 40,
             width: 40,
             padding: EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         title: Text("Appointment", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 15, color: notifire.getwhiteblackcolor,),),
@@ -115,7 +115,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                 width: 110,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: AssetImage("assets/jeep.png"),
+                                    image: AssetImage("assets/images/jeep.png"),
                                   ),
                                 ),
                               ),
@@ -183,7 +183,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                     Row(
                                       children: [
                                         Image.asset(
-                                          "assets/calendar.png",
+                                          "assets/images/calendar.png",
                                           height: 16,
                                           width: 16,
                                           color: onbordingBlue,
@@ -220,7 +220,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                     Row(
                                       children: [
                                         Image.asset(
-                                          "assets/clock1.png",
+                                          "assets/images/clock1.png",
                                           height: 16,
                                           width: 16,
                                           color: onbordingBlue,

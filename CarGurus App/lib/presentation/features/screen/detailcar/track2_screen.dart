@@ -1,11 +1,11 @@
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class Track2Screen extends StatefulWidget {
   const Track2Screen({super.key});

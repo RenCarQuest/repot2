@@ -1,21 +1,21 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, sized_box_for_whitespace
-import 'package:carguru/controller/home_controller.dart';
-import 'package:carguru/model/model.dart';
+import 'package:carguru/presentation/controller/home_controller.dart';
+import 'package:carguru/data/model/model.dart';
 import 'package:carguru/presentation/features/screen/addlocation/location_screen.dart';
 import 'package:carguru/presentation/features/screen/availablecar/availablecar_screen.dart';
 import 'package:carguru/presentation/features/screen/availablecar/brandcar_screen.dart';
 import 'package:carguru/presentation/features/screen/bottombar/brand_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:shimmer/shimmer.dart';
-import '../../../../utils/App_content.dart';
+import '../../../../core/constants/App_content.dart';
 import '../message_screen/notification_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 45,
                         width: 45,
                         padding: EdgeInsets.all(8),
-                        child: Image.asset("assets/map-pin.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                        child: Image.asset("assets/images/map-pin.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                         decoration: BoxDecoration(
                           border: Border.all(color: notifire.getborderColor),
                           borderRadius: BorderRadius.circular(8),
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 45,
                         width: 45,
                         padding: EdgeInsets.all(8),
-                        child: Image.asset("assets/notification.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                        child: Image.asset("assets/images/notification.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                         decoration: BoxDecoration(
                           border: Border.all(color: notifire.getborderColor),
                           borderRadius: BorderRadius.circular(8),
@@ -143,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 SizedBox(width: 15,),
                                 Text("Search cars...", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyColor, fontSize: 15,),),
                                 Spacer(),
-                                Image.asset("assets/Search.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                                Image.asset("assets/images/Search.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                                 SizedBox(width: 15,),
                               ],
                             ),
@@ -169,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       padding: EdgeInsets.only(left: 10, right: 15),
                                       child: Row(
                                         children: [
-                                          Image.asset("assets/car.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                                          Image.asset("assets/images/car.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                                           SizedBox(width: 5,),
                                           Text(model().catList[index], style: TextStyle(fontFamily: FontFamily.gilroyMedium, fontSize: 15, color: notifire.getwhiteblackcolor,),),
                                         ],
@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 onTap: () {
                                                   favorite = index;
                                                 },
-                                                  child: favorite == index ? Image.asset("assets/heart.png", height: 28, width: 28, color: Colors.red,) : Image.asset("assets/heart.png", height: 28, width: 28,)),
+                                                  child: favorite == index ? Image.asset("assets/images/heart.png", height: 28, width: 28, color: Colors.red,) : Image.asset("assets/images/heart.png", height: 28, width: 28,)),
                                             ],
                                           ),
                                           SizedBox(height: 15,),
@@ -237,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             height: 110,
                                             width: Get.size.width,
                                             decoration: BoxDecoration(
-                                              image: DecorationImage(image: AssetImage("assets/car1.png"),),
+                                              image: DecorationImage(image: AssetImage("assets/images/car1.png"),),
                                             ),
                                           ),
                                           SizedBox(height: 10,),
@@ -247,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 child: Text("Audi R8 Performance RWD",style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 15, color: notifire.getwhiteblackcolor,)),
                                               ),
                                               SizedBox(width: 5,),
-                                              Image.asset("assets/star.png", height: 16, width: 16,),
+                                              Image.asset("assets/images/star.png", height: 16, width: 16,),
                                               SizedBox(width: 2,),
                                               Text("4.8", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 14,),)
                                             ],
@@ -257,11 +257,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                           SizedBox(height: 8,),
                                           Row(
                                             children: [
-                                              Image.asset("assets/engine.png", height: 20, width: 20,),
+                                              Image.asset("assets/images/engine.png", height: 20, width: 20,),
                                               SizedBox(width: 4,),
                                               Text("540 hp", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                               SizedBox(width: 10,),
-                                              Image.asset("assets/manual-gearbox.png", height: 20, width: 20,),
+                                              Image.asset("assets/images/manual-gearbox.png", height: 20, width: 20,),
                                               SizedBox(width: 4,),
                                               Text("Automatic", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                               Spacer(),
@@ -365,10 +365,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                             SizedBox(height: 10),
                                             Row(
                                               children: [
-                                                Image.asset("assets/Audi.png", height: 15, width: 50,),
+                                                Image.asset("assets/images/Audi.png", height: 15, width: 50,),
                                                 Spacer(),
                                                 Image.asset(
-                                                  "assets/heart.png",
+                                                  "assets/images/heart.png",
                                                   height: 25,
                                                   width: 28,
                                                 ),
@@ -380,7 +380,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               decoration: BoxDecoration(
                                                 image: DecorationImage(
                                                   image: AssetImage(
-                                                      "assets/audiCar.png"),
+                                                      "assets/images/audiCar.png"),
                                                 ),
                                               ),
                                             ),
@@ -402,7 +402,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   ),
                                                 ),
                                                 Image.asset(
-                                                  "assets/star.png",
+                                                  "assets/images/star.png",
                                                   height: 16,
                                                   width: 16,
                                                 ),
@@ -432,7 +432,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             Row(
                                               children: [
                                                 Image.asset(
-                                                  "assets/engine.png",
+                                                  "assets/images/engine.png",
                                                   height: 20,
                                                   width: 20,
                                                 ),
@@ -600,7 +600,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Spacer(),
                 Image.asset(
-                  "assets/heart.png",
+                  "assets/images/heart.png",
                   height: 25,
                   width: 28,
                 ),

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../controller/favorite_controller.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../controller/favorite_controller.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 import '../message_screen/chat_screen.dart';
 
 class MessageScreen extends StatefulWidget {
@@ -39,16 +39,16 @@ class _MessageScreenState extends State<MessageScreen> {
   }
 
   List img = [
-    'assets/artist-1 1.png',
-    'assets/artist-2 1.png',
-    'assets/artist-3 1.png',
-    'assets/artist-4 1.png',
-    'assets/artist-5 1.png',
-    'assets/artist-6 1.png',
-    'assets/artist-7 1.png',
-    'assets/artist-8 1.png',
-    'assets/artist-3 1.png',
-    'assets/artist-4 1.png',
+    'assets/images/artist-1 1.png',
+    'assets/images/artist-2 1.png',
+    'assets/images/artist-3 1.png',
+    'assets/images/artist-4 1.png',
+    'assets/images/artist-5 1.png',
+    'assets/images/artist-6 1.png',
+    'assets/images/artist-7 1.png',
+    'assets/images/artist-8 1.png',
+    'assets/images/artist-3 1.png',
+    'assets/images/artist-4 1.png',
   ];
   List text = [
     'M.S. Dhoni',

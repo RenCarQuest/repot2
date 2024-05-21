@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
-import 'package:carguru/controller/favorite_controller.dart';
+import 'package:carguru/presentation/controller/favorite_controller.dart';
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -212,7 +212,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                       children: [
                         Text("Sort", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale, fontSize: 14,),),
                         SizedBox(width: 5,),
-                        Image.asset("assets/sort-descending.png", height: 25, width: 25,),
+                        Image.asset("assets/images/sort-descending.png", height: 25, width: 25,),
                       ],
                     ),
                   ),
@@ -249,7 +249,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                         ),
                                       ),
                                       Spacer(),
-                                      Image.asset("assets/favorite.png", height: 28, width: 28,),
+                                      Image.asset("assets/images/favorite.png", height: 28, width: 28,),
                                     ],
                                   ),
                                   SizedBox(height: 15,),
@@ -257,7 +257,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                     height: 110,
                                     width: Get.size.width,
                                     decoration: BoxDecoration(
-                                      image: DecorationImage(image: AssetImage("assets/car1.png"),),
+                                      image: DecorationImage(image: AssetImage("assets/images/car1.png"),),
                                     ),
                                   ),
                                   SizedBox(
@@ -269,7 +269,7 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                         child: Text("Audi R8 Performance RWD", style: TextStyle(fontFamily: FontFamily.gilroyBold, fontSize: 15, color: notifire.getwhiteblackcolor,),),
                                       ),
                                       SizedBox(width: 5,),
-                                      Image.asset("assets/star.png", height: 16, width: 16,),
+                                      Image.asset("assets/images/star.png", height: 16, width: 16,),
                                       SizedBox(width: 2,),
                                       Text("4.8", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 14,),),
                                     ],
@@ -279,11 +279,11 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
                                   SizedBox(height: 8,),
                                   Row(
                                     children: [
-                                      Image.asset("assets/engine.png", height: 20, width: 20,),
+                                      Image.asset("assets/images/engine.png", height: 20, width: 20,),
                                       SizedBox(width: 4,),
                                       Text("540 hp", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                       SizedBox(width: 10,),
-                                      Image.asset("assets/manual-gearbox.png", height: 20, width: 20,),
+                                      Image.asset("assets/images/manual-gearbox.png", height: 20, width: 20,),
                                       SizedBox(width: 4,),
                                       Text("Automatic", style: TextStyle(fontFamily: FontFamily.gilroyMedium, color: greyScale1, fontSize: 13,),),
                                       Spacer(),

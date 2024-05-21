@@ -1,10 +1,10 @@
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class AboutcarScreen extends StatefulWidget {
   const AboutcarScreen({super.key});
@@ -59,8 +59,8 @@ class _AboutcarScreenState extends State<AboutcarScreen> {
               title: Text("Why choose us?", style: TextStyle(fontWeight: FontWeight.w700, fontFamily: FontFamily.gilroyBold, fontSize: 20, color: notifire.getwhiteblackcolor,),),
               subtitle: Text("Used cars are an incredible value. But the process needed a makeover.", style: TextStyle(fontWeight: FontWeight.w500, fontFamily: FontFamily.gilroyMedium, fontSize: 14, color: greyScale1,),),
             ),
-            carguru(img: 'assets/card.png', title: 'Financing Made Simple', subtext: 'Get personalized loan terms and monthly payment in minutes without impacting your credit score.'),
-            carguru(img: 'assets/shield-check.png', title: 'Protect your vehicle', subtext: 'Safeguard yourself from the unexpected costs of car ownership with a vehicle protection plan and gap coverage.'),
+            carguru(img: 'assets/images/card.png', title: 'Financing Made Simple', subtext: 'Get personalized loan terms and monthly payment in minutes without impacting your credit score.'),
+            carguru(img: 'assets/images/shield-check.png', title: 'Protect your vehicle', subtext: 'Safeguard yourself from the unexpected costs of car ownership with a vehicle protection plan and gap coverage.'),
           ],
         ),
       ),

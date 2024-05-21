@@ -1,10 +1,10 @@
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class VoucherScreen extends StatefulWidget {
   const VoucherScreen({super.key});
@@ -30,7 +30,7 @@ class _VoucherScreenState extends State<VoucherScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,
@@ -38,7 +38,7 @@ class _VoucherScreenState extends State<VoucherScreen> {
         title: Text("Vouchers", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: notifire.getwhiteblackcolor, fontSize: 16,),
         ),
         actions: [
-          Image.asset("assets/question-circle-outlined.png", height: 25, width: 25,),
+          Image.asset("assets/images/question-circle-outlined.png", height: 25, width: 25,),
           const SizedBox(width: 15),
         ],
       ),

@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:carguru/controller/signup_controller.dart';
-import 'package:carguru/helpar/routes_helper.dart';
+import 'package:carguru/presentation/controller/signup_controller.dart';
+import 'package:carguru/core/helpar/routes_helper.dart';
 import 'package:carguru/presentation/features/screen/login_flow/login_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -94,7 +94,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(12),
                             child: Image.asset(
-                              "assets/user.png",
+                              "assets/images/user.png",
                               height: 25,
                               width: 25,
                               color: greyColor,
@@ -118,7 +118,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           prefixIcon: Padding(
                             padding: const EdgeInsets.all(12),
                             child: Image.asset(
-                              "assets/mail.png",
+                              "assets/images/mail.png",
                               height: 25,
                               width: 25,
                               color: greyColor,
@@ -148,7 +148,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   ? Padding(
                                       padding: const EdgeInsets.all(10),
                                       child: Image.asset(
-                                        "assets/eye.png",
+                                        "assets/images/eye.png",
                                         height: 25,
                                         width: 25,
                                         color: greyColor,
@@ -157,7 +157,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   : Padding(
                                       padding: const EdgeInsets.all(10),
                                       child: Image.asset(
-                                        "assets/eye-off.png",
+                                        "assets/images/eye-off.png",
                                         height: 25,
                                         width: 25,
                                         color: greyColor,
@@ -167,7 +167,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             prefixIcon: Padding(
                               padding: const EdgeInsets.all(10),
                               child: Image.asset(
-                                "assets/lock.png",
+                                "assets/images/lock.png",
                                 height: 25,
                                 width: 25,
                                 color: greyColor,
@@ -278,7 +278,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           width: Get.size.width,
                           margin:
                               EdgeInsets.symmetric(vertical: 5, horizontal: 15),
-                          image: "assets/google.png",
+                          image: "assets/images/google.png",
                           buttonText: "Continue with Google",
                           style: TextStyle(
                             fontFamily: FontFamily.gilroyMedium,
@@ -298,8 +298,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           margin:
                               EdgeInsets.symmetric(vertical: 5, horizontal: 15),
                           image: notifire.isDark
-                              ? "assets/apple.png"
-                              : "assets/darkapple.png",
+                              ? "assets/images/apple.png"
+                              : "assets/images/darkapple.png",
                           buttonText: "Continue with Apple",
                           style: TextStyle(
                             fontFamily: FontFamily.gilroyMedium,

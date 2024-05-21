@@ -1,10 +1,10 @@
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/Dark_lightmode.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
 
 class BrandScreen extends StatefulWidget {
   const BrandScreen({super.key});

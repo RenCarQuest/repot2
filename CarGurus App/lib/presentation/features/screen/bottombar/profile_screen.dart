@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last
-import 'package:carguru/model/model.dart';
+import 'package:carguru/data/model/model.dart';
 import 'package:carguru/presentation/features/faq/faq_screen.dart';
 import 'package:carguru/presentation/features/screen/appointment/appointment_screen.dart';
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
@@ -8,16 +8,16 @@ import 'package:carguru/presentation/features/screen/testdrive/testdrive_screen.
 import 'package:carguru/presentation/features/screen/testdrive/vouchers_screen.dart';
 import 'package:carguru/presentation/features/settings_screen/editprofile_screen.dart';
 import 'package:carguru/presentation/features/settings_screen/settings_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../../../controller/favorite_controller.dart';
+import '../../../controller/favorite_controller.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -70,7 +70,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Get.to(SettingsScreen());
               },
               child: Image.asset(
-                "assets/settings.png",
+                "assets/images/settings.png",
                 height: 25,
                 width: 25,
               )),
@@ -257,7 +257,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ),
                         Image.asset(
-                          "assets/chevron-right.png",
+                          "assets/images/chevron-right.png",
                           height: 25,
                           width: 25,
                         ),
@@ -304,13 +304,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Row(
                             children: [
                               Image.asset(
-                                "assets/Audi.png",
+                                "assets/images/Audi.png",
                                 height: 15,
                                 width: 50,
                               ),
                               Spacer(),
                               Image.asset(
-                                "assets/heart.png",
+                                "assets/images/heart.png",
                                 height: 25,
                                 width: 28,
                               ),
@@ -321,7 +321,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             width: Get.size.width,
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/audiCar.png"),
+                                image: AssetImage("assets/images/audiCar.png"),
                               ),
                             ),
                           ),
@@ -341,7 +341,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 ),
                               ),
                               Image.asset(
-                                "assets/star.png",
+                                "assets/images/star.png",
                                 height: 16,
                                 width: 16,
                               ),
@@ -370,7 +370,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Row(
                             children: [
                               Image.asset(
-                                "assets/engine.png",
+                                "assets/images/engine.png",
                                 height: 20,
                                 width: 20,
                               ),
@@ -429,7 +429,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             alignment: Alignment.center,
             padding: EdgeInsets.all(8),
             child: Image.asset(
-              "assets/moon.png",
+              "assets/images/moon.png",
             ),
           ),
           Expanded(

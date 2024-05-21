@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables, unused_local_variable, prefer_interpolation_to_compose_strings
 import 'dart:ui' as ui;
-import 'package:carguru/controller/addlocation_controller.dart';
-import 'package:carguru/helpar/routes_helper.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/presentation/controller/addlocation_controller.dart';
+import 'package:carguru/core/helpar/routes_helper.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geocoding/geocoding.dart';
@@ -56,7 +56,7 @@ class _DelieryAddress2State extends State<DelieryAddress2> {
   }
 
   loadData() async {
-    final Uint8List markIcons = await getImages("assets/MapPin.png", 100);
+    final Uint8List markIcons = await getImages("assets/images/images/MapPin.png", 100);
     // makers added according to index
     _markers.add(
       Marker(
@@ -159,7 +159,7 @@ class _DelieryAddress2State extends State<DelieryAddress2> {
                   },
                   onTap: (argument) async {
                     final Uint8List markIcons =
-                        await getImages("assets/MapPin.png", 150);
+                        await getImages("assets/images/images/MapPin.png", 150);
                     // makers added according to index
                     _markers.add(
                       Marker(
@@ -211,7 +211,7 @@ class _DelieryAddress2State extends State<DelieryAddress2> {
                   Row(
                     children: [
                       Image.asset(
-                        "assets/location-crosshairs.png",
+                        "assets/images/images/location-crosshairs.png",
                         height: 20,
                         width: 20,
                         color: onbordingBlue,

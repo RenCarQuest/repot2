@@ -1,13 +1,13 @@
 import 'package:carguru/presentation/features/screen/bottombar/home_screen.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Custom_widget.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/utils/Custom_widget.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class LocationScreen extends StatefulWidget {
   const LocationScreen({super.key});
@@ -44,7 +44,7 @@ class _LocationScreenState extends State<LocationScreen> {
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset("assets/map-pin.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
+                Image.asset("assets/images/map-pin.png", height: 25, width: 25, color: notifire.getwhiteblackcolor,),
                 const SizedBox(width: 15,),
                 Expanded(
                   child: Text("Clay Street, San Fransisco", style: TextStyle(fontFamily: FontFamily.gilroyBold, color: notifire.getwhiteblackcolor, fontSize: 16,),),

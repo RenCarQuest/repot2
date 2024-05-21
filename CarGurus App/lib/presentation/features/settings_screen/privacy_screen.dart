@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../utils/Colors.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 
 class PrivacyScreen extends StatefulWidget {
   const PrivacyScreen({super.key});
@@ -35,7 +35,7 @@ class _PrivacyScreenState extends State<PrivacyScreen> {
         actions: const [
           Padding(
             padding: EdgeInsets.all(10),
-            child: CircleAvatar(backgroundImage: AssetImage('assets/05.png'),),
+            child: CircleAvatar(backgroundImage: AssetImage('assets/images/05.png'),),
           ),
           SizedBox(width: 10,),
         ],

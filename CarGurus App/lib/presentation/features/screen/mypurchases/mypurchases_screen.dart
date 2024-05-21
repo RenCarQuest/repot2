@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last, sized_box_for_whitespace
 
 import 'package:carguru/presentation/features/screen/detailcar/cardetails_screen.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -51,7 +51,7 @@ class _MyPurchasesScreenState extends State<MyPurchasesScreen> {
             width: 40,
             padding: EdgeInsets.all(12),
             child: Image.asset(
-              "assets/back.png",
+              "assets/images/back.png",
               color: notifire.getwhiteblackcolor,
             ),
           ),
@@ -83,7 +83,7 @@ class _MyPurchasesScreenState extends State<MyPurchasesScreen> {
                     Row(
                       children: [
                         Image.asset(
-                          "assets/calendar.png",
+                          "assets/images/calendar.png",
                           height: 25,
                           width: 25,
                         ),
@@ -122,7 +122,7 @@ class _MyPurchasesScreenState extends State<MyPurchasesScreen> {
                                   width: 130,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
-                                      image: AssetImage("assets/jeep.png"),
+                                      image: AssetImage("assets/images/jeep.png"),
                                     ),
                                   ),
                                 ),

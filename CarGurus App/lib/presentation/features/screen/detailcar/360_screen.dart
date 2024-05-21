@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../utils/Dark_lightmode.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
 
 class OpencarScreen extends StatefulWidget {
   const OpencarScreen({super.key});

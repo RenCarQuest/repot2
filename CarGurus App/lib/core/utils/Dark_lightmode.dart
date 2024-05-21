@@ -1,6 +1,6 @@
 // ignore_for_file: file_names, prefer_const_constructors
 
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 
 class ColorNotifire with ChangeNotifier {

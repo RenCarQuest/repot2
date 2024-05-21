@@ -1,14 +1,14 @@
 import 'dart:async';
-import 'package:carguru/utils/App_content.dart';
+import 'package:carguru/core/constants/App_content.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 import 'package:carguru/presentation/features/onboarding/onboarding_screen.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
-import 'package:carguru/utils/Colors.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/Colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

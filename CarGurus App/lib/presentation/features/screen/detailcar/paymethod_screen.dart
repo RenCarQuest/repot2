@@ -3,11 +3,11 @@ import 'package:carguru/presentation/features/screen/detailcar/recipt_screen.dar
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-import '../../../../utils/App_content.dart';
-import '../../../../utils/Colors.dart';
-import '../../../../utils/Custom_widget.dart';
-import '../../../../utils/Dark_lightmode.dart';
-import '../../../../utils/fontfameli_model.dart';
+import '../../../../core/constants/App_content.dart';
+import '../../../../core/constants/Colors.dart';
+import '../../../../core/utils/Custom_widget.dart';
+import '../../../../core/utils/Dark_lightmode.dart';
+import '../../../../core/utils/fontfameli_model.dart';
 
 class PaymethodScreen extends StatefulWidget {
   const PaymethodScreen({super.key});
@@ -19,10 +19,10 @@ class PaymethodScreen extends StatefulWidget {
 class _PaymethodScreenState extends State<PaymethodScreen> {
   late ColorNotifire notifire;
   List img = [
-    'assets/mastercard1.png',
-    'assets/paypal2.png',
-    'assets/apple3.png',
-    'assets/google4.png',
+    'assets/images/mastercard1.png',
+    'assets/images/paypal2.png',
+    'assets/images/apple3.png',
+    'assets/images/google4.png',
   ];
   List text = [
     'Credit/Debit Card',
@@ -48,7 +48,7 @@ class _PaymethodScreenState extends State<PaymethodScreen> {
             height: 40,
             width: 40,
             padding: const EdgeInsets.all(12),
-            child: Image.asset("assets/back.png", color: notifire.getwhiteblackcolor,),
+            child: Image.asset("assets/images/back.png", color: notifire.getwhiteblackcolor,),
           ),
         ),
         centerTitle: true,

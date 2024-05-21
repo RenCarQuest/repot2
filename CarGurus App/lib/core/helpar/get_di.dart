@@ -1,10 +1,10 @@
-import 'package:carguru/controller/addlocation_controller.dart';
-import 'package:carguru/controller/cardetails_controller.dart';
-import 'package:carguru/controller/carpurchase_controller.dart';
-import 'package:carguru/controller/favorite_controller.dart';
-import 'package:carguru/controller/home_controller.dart';
-import 'package:carguru/controller/login_controller.dart';
-import 'package:carguru/controller/signup_controller.dart';
+import 'package:carguru/presentation/controller/addlocation_controller.dart';
+import 'package:carguru/presentation/controller/cardetails_controller.dart';
+import 'package:carguru/presentation/controller/carpurchase_controller.dart';
+import 'package:carguru/presentation/controller/favorite_controller.dart';
+import 'package:carguru/presentation/controller/home_controller.dart';
+import 'package:carguru/presentation/controller/login_controller.dart';
+import 'package:carguru/presentation/controller/signup_controller.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

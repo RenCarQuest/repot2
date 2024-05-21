@@ -2,10 +2,10 @@ import '../../../core/l10n/extensions/app_localizations_context.dart';
 import '../../../presentation/features/faq/faq_anwer_screen.dart';
 import '../../../presentation/features/faq/faq_cubit.dart';
 import '../../../presentation/features/faq/help_footer_widget.dart';
-import '../../../utils/App_content.dart';
-import '../../../utils/Colors.dart';
-import '../../../utils/Dark_lightmode.dart';
-import '../../../utils/fontfameli_model.dart';
+import '../../../core/constants/App_content.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
@@ -64,7 +64,7 @@ class _FaqScreenState extends State<FaqScreen> {
           Padding(
             padding: EdgeInsets.all(10),
             child: CircleAvatar(
-              backgroundImage: AssetImage('assets/05.png'),
+              backgroundImage: AssetImage('assets/images/05.png'),
             ),
           ),
           SizedBox(width: 10),

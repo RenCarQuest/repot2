@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 import 'package:carguru/presentation/features/screen/login_flow/enableface_screen.dart';
 import 'package:carguru/presentation/features/screen/login_flow/login_screen.dart';
-import 'package:carguru/utils/App_content.dart';
-import 'package:carguru/utils/Colors.dart';
-import 'package:carguru/utils/Custom_widget.dart';
-import 'package:carguru/utils/Dark_lightmode.dart';
-import 'package:carguru/utils/fontfameli_model.dart';
+import 'package:carguru/core/constants/App_content.dart';
+import 'package:carguru/core/constants/Colors.dart';
+import 'package:carguru/core/utils/Custom_widget.dart';
+import 'package:carguru/core/utils/Dark_lightmode.dart';
+import 'package:carguru/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
@@ -174,7 +174,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                             ? Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Image.asset(
-                                  "assets/eye.png",
+                                  "assets/images/eye.png",
                                   height: 25,
                                   width: 25,
                                   color: greyColor,
@@ -183,7 +183,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                             : Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Image.asset(
-                                  "assets/eye-off.png",
+                                  "assets/images/eye-off.png",
                                   height: 25,
                                   width: 25,
                                   color: greyColor,
@@ -193,7 +193,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Image.asset(
-                          "assets/lock.png",
+                          "assets/images/lock.png",
                           height: 25,
                           width: 25,
                           color: greyColor,
@@ -224,7 +224,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                             ? Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Image.asset(
-                                  "assets/eye.png",
+                                  "assets/images/eye.png",
                                   height: 25,
                                   width: 25,
                                   color: greyColor,
@@ -233,7 +233,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                             : Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Image.asset(
-                                  "assets/eye-off.png",
+                                  "assets/images/eye-off.png",
                                   height: 25,
                                   width: 25,
                                   color: greyColor,
@@ -243,7 +243,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
                       prefixIcon: Padding(
                         padding: const EdgeInsets.all(10),
                         child: Image.asset(
-                          "assets/lock.png",
+                          "assets/images/lock.png",
                           height: 25,
                           width: 25,
                           color: greyColor,
@@ -301,7 +301,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
           height: 25,
           width: 25,
           alignment: Alignment.center,
-          child: Image.asset("assets/circle-check.png", color: color),
+          child: Image.asset("assets/images/circle-check.png", color: color),
         ),
         SizedBox(
           width: 10,
@@ -331,7 +331,7 @@ class _NewPasswordScreenState extends State<NewPasswordScreen> {
               height: Get.size.height * 0.035,
             ),
             Image.asset(
-              "assets/EmptynewPassword.png",
+              "assets/images/EmptynewPassword.png",
               height: 100,
               width: 100,
             ),

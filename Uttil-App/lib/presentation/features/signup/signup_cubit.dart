@@ -14,13 +14,14 @@ class SignupCubit extends Cubit<SignupState> {
   final SignupUseCase _signupUseCase;
 
   Future<void> registerUser(String name, String email, String password) async {
-    AlertMessage.showLoading();
-
     final result = await _signupUseCase.invoke(name, email, password);
     AlertMessage.hideLoading();
 
     if (result.isFailure) {
-      AlertMessage.showErrorMessage(result.error.toString(), null);
+      emit(state.copyWith(
+        status: SignupStatus.failure,
+        errorMessage: result.error.toString(),
+      ));
     } else {
       emit(state.copyWith(
         status: SignupStatus.success,

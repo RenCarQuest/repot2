@@ -1,3 +1,4 @@
+import '../../core/l10n/extensions/app_localizations_context.dart';
 import '../../core/constants/Colors.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,7 @@ class _LoaderOverlay extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Please wait",
+              context.localization.generalWaitTitle,
               style: TextStyle(
                   fontSize: 16, fontWeight: FontWeight.w700, color: greycolor),
             ),

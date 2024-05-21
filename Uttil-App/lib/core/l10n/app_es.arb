@@ -22,6 +22,8 @@
     "helpCenterFooterBody": "Contactanos y te responderemos",
     "helpCenterFooterContactButton": "Contactar a soporte",
     "generalSkip": "Saltar",
+    "generalWaitTitle": "Espere por favor",
+    "generalLoading": "Cargando...",
     "generalGetStartedButton": "Empezar",
     "onboardingEmailButton": "Continuar con Correo",
     "onboardingAppleButton": "Continuar con Apple",

@@ -40,13 +40,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   _register() {
     if (_formKey.currentState?.validate() ?? false) {
+      AlertMessage.showLoading(message: context.localization.generalLoading);
       context.read<SignupCubit>().registerUser(
             signUpController.name.text.trim(),
             signUpController.email.text.trim(),
             signUpController.password.text.trim(),
           );
     } else {
-      AlertMessage.showErrorMessage(context.localization.onboardingMissingInfoMsg, null);
+      AlertMessage.showErrorMessage(
+          context.localization.onboardingMissingInfoMsg, null);
     }
   }
 
@@ -73,8 +75,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       backgroundColor: notifire.getbgcolor,
       body: BlocBuilder<SignupCubit, SignupState>(builder: (context, state) {
-        if (state.status == SignupStatus.success) {
-          AlertMessage.showSuccessMessage(context.localization.signUpSuccessMessage, _successSignup);
+        switch (state.status) {
+          case SignupStatus.success:
+            AlertMessage.showSuccessMessage(context.localization.signUpSuccessMessage, null);
+            WidgetsBinding.instance.addPostFrameCallback((_) => _successSignup());
+            break;
+          case SignupStatus.failure:
+            if (state.errorMessage != null) {
+              AlertMessage.showErrorMessage(state.errorMessage!, null);
+            }
+            break;
+          default:
+            break;
         }
         return SafeArea(
           child: Padding(

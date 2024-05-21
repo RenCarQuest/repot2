@@ -28,6 +28,8 @@
     "helpCenterFooterBody": "Contact us and we'll respond to you",
     "helpCenterFooterContactButton": "Contact support",
     "generalSkip": "Skip",
+    "generalWaitTitle": "Please wait",
+    "generalLoading": "Loading...",
     "generalGetStartedButton": "Get Started",
     "onboardingEmailButton": "Continue with Email",
     "onboardingAppleButton": "Continue with Apple",

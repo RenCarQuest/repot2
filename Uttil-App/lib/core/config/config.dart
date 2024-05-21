@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:uttil/core/di/di.dart';
 import 'package:flutter/services.dart';
 

@@ -1,8 +1,8 @@
 // ignore_for_file: non_constant_identifier_names, prefer_const_constructors, prefer_const_literals_to_create_immutables, file_names, sort_child_properties_last
 
-import 'package:uttil/core/constants/Colors.dart';
-import 'package:uttil/core/utils/Dark_lightmode.dart';
-import 'package:uttil/core/utils/fontfameli_model.dart';
+import '../../core/constants/Colors.dart';
+import '../../core/utils/Dark_lightmode.dart';
+import '../../core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';

@@ -1,8 +1,8 @@
-import 'package:uttil/domain/models/faq/faq_model.dart';
-import 'package:uttil/domain/repositories/faq/faq_repository.dart';
+import '../../../core/utils/results.dart';
+import '../../../domain/models/faq/faq_model.dart';
+import '../../../domain/repositories/faq/faq_repository.dart';
 import 'package:flutter/widgets.dart';
 import 'package:injectable/injectable.dart';
-import '../../../core/utils/results.dart';
 
 @lazySingleton
 class GetFaqsUseCase {

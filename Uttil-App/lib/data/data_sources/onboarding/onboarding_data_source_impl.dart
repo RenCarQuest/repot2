@@ -1,10 +1,9 @@
-import 'package:uttil/core/l10n/extensions/app_localizations_context.dart';
-import 'package:uttil/core/utils/results.dart';
-import 'package:uttil/data/data_sources/onboarding/onboarding_data_source.dart';
-import 'package:uttil/domain/models/onboarding/onboarding_model.dart';
-import 'package:flutter/widgets.dart';
-
 import '../../../core/constants/App_content.dart';
+import '../../../core/l10n/extensions/app_localizations_context.dart';
+import '../../../core/utils/results.dart';
+import '../../../data/data_sources/onboarding/onboarding_data_source.dart';
+import '../../../domain/models/onboarding/onboarding_model.dart';
+import 'package:flutter/widgets.dart';
 
 class OnboardingDataSourceImpl implements OnboardingDataSource {
   OnboardingDataSourceImpl();

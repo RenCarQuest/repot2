@@ -1,24 +1,23 @@
-// ignore_for_file: prefer_const_constructors, deprecated_member_use
-import 'package:uttil/core/di/di.dart';
-import 'package:uttil/core/providers/locale_provider.dart';
-import 'package:uttil/core/helpar/routes_helper.dart';
-import 'package:uttil/presentation/features/onboarding/onboarding_cubit.dart';
-import 'package:uttil/presentation/features/faq/faq_cubit.dart';
-import 'package:uttil/core/utils/Dark_lightmode.dart';
+import '../core/helpar/get_di.dart' as di;
+import '../core/di/di.dart';
+import '../core/providers/locale_provider.dart';
+import '../core/helpar/routes_helper.dart';
+import '../core/utils/Dark_lightmode.dart';
+import '../presentation/features/onboarding/onboarding_cubit.dart';
+import '../presentation/features/faq/faq_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:uttil/core/helpar/get_di.dart' as di;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureDependencies();
   await di.init();
   await GetStorage.init();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

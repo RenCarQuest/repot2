@@ -22,7 +22,7 @@ class Appcontent{
   static const String twiter = 'assets/images/twiter.png';
   static const String paypal = 'assets/images/paypal.png';
   static const String clock = 'assets/images/clock.png';
-
+  static const String user = 'assets/images/user.png';
   static const String back = "assets/images/back.png";
   static const String tesla = "assets/images/Tesla.png";
   static const String bmw = "assets/images/BMW.png";

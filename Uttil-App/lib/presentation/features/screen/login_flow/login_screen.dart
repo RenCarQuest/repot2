@@ -3,9 +3,9 @@
 import 'package:uttil/presentation/controller/login_controller.dart';
 import 'package:uttil/presentation/features/screen/bottombar/bottombar_screen.dart';
 import 'package:uttil/presentation/features/screen/login_flow/resetpassword_screen.dart';
-import 'package:uttil/presentation/features/screen/login_flow/signup_screen.dart';
+import 'package:uttil/presentation/features/signup/signup_screen.dart';
 import 'package:uttil/core/constants/Colors.dart';
-import 'package:uttil/core/utils/Custom_widget.dart';
+import 'package:uttil/presentation/widgets/custom_widget.dart';
 import 'package:uttil/core/utils/Dark_lightmode.dart';
 import 'package:uttil/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';

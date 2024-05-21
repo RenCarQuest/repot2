@@ -132,10 +132,13 @@ textFormFild(
   ColorNotifire notifire, {
   TextEditingController? controller,
   bool? obscureText,
+  TextInputAction? textInputAction,
   Widget? suffixIcon,
   Widget? prefixIcon,
   String? labelText,
   String? Function(String?)? validator,
+  void Function(String)? onFieldSubmitted,
+  TextInputType? keyboardType
 }) {
   return Container(
     decoration: BoxDecoration(
@@ -144,6 +147,9 @@ textFormFild(
     child: TextFormField(
       controller: controller,
       obscureText: obscureText ?? false,
+      onFieldSubmitted: onFieldSubmitted,
+      textInputAction: textInputAction,
+      keyboardType: keyboardType,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       cursorColor: onbordingBlue,
       style: TextStyle(

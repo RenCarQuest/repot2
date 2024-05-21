@@ -2,7 +2,7 @@
 import 'package:uttil/data/model/model.dart';
 import 'package:uttil/presentation/features/screen/detailcar/payment_screen.dart';
 import 'package:uttil/core/constants/Colors.dart';
-import 'package:uttil/core/utils/Custom_widget.dart';
+import 'package:uttil/presentation/widgets/custom_widget.dart';
 import 'package:uttil/core/utils/Dark_lightmode.dart';
 import 'package:uttil/core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';

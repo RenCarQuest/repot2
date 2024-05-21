@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import '../../../core/constants/App_content.dart';
 import '../../../core/constants/Colors.dart';
-import '../../../core/utils/Custom_widget.dart';
+import '../../widgets/custom_widget.dart';
 import '../../../core/utils/Dark_lightmode.dart';
 import '../../../core/utils/fontfameli_model.dart';
 

@@ -57,5 +57,14 @@
     "onboardingTitle3": "Reserve and enjoy!",
     "onboardingBody3": "Once you've found the perfect vehicle, book with just a few clicks. Select your desired dates and times, review your reservation details and confirm. Ready! You will receive a confirmation with all the details of your reservation.",
     "onboardingTitle4": "Register or log in",
-    "onboardingBody4": "To start using Uttil, you'll need an account. If you already have one, log in. Otherwise, sign up with your email address to start exploring our fleet of available vehicles."
+    "onboardingBody4": "To start using Uttil, you'll need an account. If you already have one, log in. Otherwise, sign up with your email address to start exploring our fleet of available vehicles.",
+    "onboardingEmailError": "Please enter your email",
+    "onboardingPasswordError": "Please enter your password",
+    "onboardingMissingInfoMsg": "Please, fill out all fields",
+    "onboardingPasswordLengthError": "Password must be longer than 6 characters.\n",
+    "onboardingPasswordUppercaseError": "• Uppercase letter is missing.\n",
+    "onboardingPasswordLowercaseError": "• Lowercase letter is missing.\n",
+    "onboardingPasswordDigitError": "• Digit is missing.\n",
+    "onboardingPasswordCharacterError": "• Special character is missing.\n",
+    "onboardingInvalidEmail": "Enter a valid email address"
 }

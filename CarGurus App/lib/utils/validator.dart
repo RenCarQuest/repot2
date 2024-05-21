@@ -13,7 +13,7 @@ class Validator {
     final regex = RegExp(pattern);
 
     if (value == null || value.isEmpty) {
-      return context.localization.signUpEmailError;
+      return context.localization.onboardingEmailError;
     }
     return value.isNotEmpty && !regex.hasMatch(value)
         ? context.localization.onboardingInvalidEmail
@@ -25,7 +25,7 @@ class Validator {
     String errorMessage = '';
 
     if (password == null || password.isEmpty) {
-      return context.localization.signUpPasswordError;
+      return context.localization.onboardingPasswordError;
     }
 
     // Password length greater than 6

@@ -15,7 +15,7 @@ class Appcontent{
   static const String passwordch = 'assets/images/EmptynewPassword.png';
   static const String faceid = 'assets/images/faceid.png';
   static const String fingerprint = 'assets/images/fingerprint.png';
-
+  static const String heart = 'assets/images/heart.png';
   static const String google = 'assets/images/google.png';
   static const String apple = 'assets/images/apple.png';
   static const String darkapple = 'assets/images/darkapple.png';
@@ -35,8 +35,10 @@ class Appcontent{
   static const String eye = "assets/images/eye.png";
   static const String eyeOff = "assets/images/eye-off.png";
   static const String mappin1 = 'assets/images/map-pin1.png';
+  static const String mapPin = 'assets/images/map-pin.png';
   static const String search = 'assets/images/Search.png';
   static const String testDrive = 'assets/images/testDrive.png';
+  static const String engine = 'assets/images/engine.png';
   static const String filter = 'assets/images/Filter.png';
   static const String porche = 'assets/images/porche.png';
   static const String layoutlist = 'assets/images/layout-list.png';
@@ -53,7 +55,10 @@ class Appcontent{
   static const String signout = 'assets/images/signout.png';
   static const String newcard = 'assets/images/addnewcard.png';
   static const String creditcard = 'assets/images/Credit Card.png';
+  static const String star = 'assets/images/star.png';
+  static const String manualGearbox = 'assets/images/manual-gearbox.png';
   
+  // Home Bottom Bar Items
   static const String homeOutline = 'assets/images/homeOutline.png';
   static const String homeBold = 'assets/images/homeBold.png';
   static const String favoriteOutline = 'assets/images/favoriteOutline.png';

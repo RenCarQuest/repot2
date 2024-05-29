@@ -1,5 +1,5 @@
 import '../../../presentation/features/screen/bottombar/favorite_screen.dart';
-import '../../../presentation/features/screen/bottombar/home_screen.dart';
+import '../home/home_screen.dart';
 import '../../../presentation/features/screen/bottombar/message_screen.dart';
 import '../../../presentation/features/screen/bottombar/profile_screen.dart';
 import '../../../core/constants/App_content.dart';

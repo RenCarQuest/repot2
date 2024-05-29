@@ -94,5 +94,11 @@
     "bottomNavigationHomeItem": "Inicio",
     "bottomNavigationFavoritesItem": "Favoritos",
     "bottomNavigationMessageItem": "Mensajes",
-    "bottomNavigationProfileItem": "Perfil"
+    "bottomNavigationProfileItem": "Perfil",
+    "homeLocationTitle": "Ubicación",
+    "homeSearchBarHint": "Buscar carros...",
+    "homeRecommendationTitle": "Nuestras recomendaciones",
+    "homeTopBrands": "Mejores marcas",
+    "carItemAvailableMsg": "Disponible",
+    "carItemNotAvailableMsg": "En uso"
 }

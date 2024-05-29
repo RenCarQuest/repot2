@@ -4,6 +4,7 @@ import '../core/di/di.dart';
 import '../core/providers/locale_provider.dart';
 import '../core/helpar/routes_helper.dart';
 import '../core/utils/Dark_lightmode.dart';
+import '../presentation/features/home/home_cubit.dart';
 import '../presentation/features/login/login_cubit.dart';
 import '../presentation/features/onboarding/onboarding_cubit.dart';
 import '../presentation/features/faq/faq_cubit.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
               BlocProvider<OnboardingCubit>(create: (_) => sl<OnboardingCubit>()),
               BlocProvider<SignupCubit>(create: (_) => sl<SignupCubit>()),
               BlocProvider<LoginCubit>(create: (_) => sl<LoginCubit>()),
+              BlocProvider<HomeCubit>(create: (_) => sl<HomeCubit>()),
             ],
             child: GetMaterialApp(
               localizationsDelegates: AppLocalizations.localizationsDelegates,

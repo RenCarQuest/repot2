@@ -75,10 +75,10 @@
     "onboardingPasswordLowercaseError": "• Lowercase letter is missing.\n",
     "onboardingPasswordDigitError": "• Digit is missing.\n",
     "onboardingPasswordCharacterError": "• Special character is missing.\n",
+    "onboardingEmailHint": "Email",
+    "onboardingPasswordHint": "Password",
     "signUpNameHint": "Fullname",
-    "signUpEmailHint": "Email",
-    "signUpPasswordHint": "Password",
-    "signUpScreenTitle": "Sign Up",
+    "signUpTitle": "Sign Up",
     "signUpNameError": "Please enter your name",
     "signUpTermsPart1": "By signing up, you agree to our",
     "signUpTermsPart2": "Terms of",
@@ -87,5 +87,12 @@
     "signUpTermsPart5": "Privacy Policy.",
     "signUpHaveAccountMsg": "Already have and account?",
     "signInButton": "Sign In",
-    "signUpSuccessMessage": "Account created successfully"
+    "signUpSuccessMessage": "Account created successfully",
+    "loginScreenTitle": "Log in to Uttil",
+    "loginTitle": "Log In",
+    "loginSubtitle": "Welcome back! Please enter your details.",
+    "forgotPasswordMsg": "Forgot password?",
+    "forgotPasswordAction": "Reset it",
+    "loginSigninInvitationMsg": "Don’t have and account?",
+    "loginSuccessMessage": "You are logged in!"
 }

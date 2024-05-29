@@ -1,7 +1,7 @@
 import 'package:uttil/core/l10n/extensions/app_localizations_context.dart';
 import 'package:uttil/presentation/features/faq/faq_screen.dart';
 import 'package:uttil/presentation/features/onboarding/onboarding_cubit.dart';
-import 'package:uttil/presentation/features/screen/login_flow/login_screen.dart';
+import 'package:uttil/presentation/features/login/login_screen.dart';
 import 'package:uttil/core/constants/App_content.dart';
 import 'package:uttil/core/constants/Colors.dart';
 import 'package:uttil/presentation/widgets/custom_widget.dart';
@@ -234,7 +234,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               fontSize: 15,
             ),
             onclick: () {
-              Get.to(const LoginScreen());
+              Get.to(() => const LoginScreen());
             },
           ),
           const SizedBox(height: 10),

@@ -3,7 +3,7 @@ import '../../presentation/controller/cardetails_controller.dart';
 import '../../presentation/controller/carpurchase_controller.dart';
 import '../../presentation/controller/favorite_controller.dart';
 import '../../presentation/controller/home_controller.dart';
-import '../../presentation/controller/login_controller.dart';
+import '../../presentation/controller/login/login_controller.dart';
 import '../../presentation/controller/signup/signup_controller.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';

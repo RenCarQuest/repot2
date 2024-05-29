@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
-import '../../../../core/utils/Custom_widget.dart';
+import '../../../widgets/custom_widget.dart';
 import '../../../../core/utils/Dark_lightmode.dart';
 import '../../../../core/utils/fontfameli_model.dart';
 

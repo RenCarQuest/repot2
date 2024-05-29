@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../widgets/custom_widget.dart';
 import '../../../../core/utils/Dark_lightmode.dart';
 import '../../../../core/utils/fontfameli_model.dart';
-import '../bottombar/bottombar_screen.dart';
+import '../../bottom_navigation_bar/bottombar_screen.dart';
 
 class InterestScreen extends StatefulWidget {
   const InterestScreen({super.key});

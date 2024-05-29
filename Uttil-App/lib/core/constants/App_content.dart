@@ -53,6 +53,15 @@ class Appcontent{
   static const String signout = 'assets/images/signout.png';
   static const String newcard = 'assets/images/addnewcard.png';
   static const String creditcard = 'assets/images/Credit Card.png';
+  
+  static const String homeOutline = 'assets/images/homeOutline.png';
+  static const String homeBold = 'assets/images/homeBold.png';
+  static const String favoriteOutline = 'assets/images/favoriteOutline.png';
+  static const String favoriteBold = 'assets/images/fevoriteBold.png';
+  static const String messageOutline = 'assets/images/messageOutline.png';
+  static const String messageBold = 'assets/images/messageBold.png';
+  static const String profileOutline = 'assets/images/profileOutline.png';
+  static const String profileBold = 'assets/images/profileBold.png';
 
   static const String phone = 'assets/images/phone.png';
   static const String checks = 'assets/images/checks.png';

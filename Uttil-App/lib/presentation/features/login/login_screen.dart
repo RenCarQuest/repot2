@@ -6,7 +6,7 @@ import '../../../core/utils/fontfameli_model.dart';
 import '../../../core/validators/validator.dart';
 import '../../controller/login/login_controller.dart';
 import '../../../presentation/features/login/login_cubit.dart';
-import '../../../presentation/features/screen/bottombar/bottombar_screen.dart';
+import '../bottom_navigation_bar/bottombar_screen.dart';
 import '../../../presentation/features/screen/login_flow/resetpassword_screen.dart';
 import '../../widgets/alert_message.dart';
 import '../../widgets/custom_widget.dart';

@@ -69,10 +69,12 @@
     "onboardingPasswordLowercaseError": "• Falta al menos una letra minúscula.\n",
     "onboardingPasswordDigitError": "• Falta al menos un dígito.\n",
     "onboardingPasswordCharacterError": "• Falta al menos un caracter especial.\n",
+    "onboardingEmailHint": "Correo electónico",
+    "onboardingPasswordHint": "Contraseña",
     "signUpNameHint": "Nombre completo",
     "signUpEmailHint": "Correo electónico",
     "signUpPasswordHint": "Contraseña",
-    "signUpScreenTitle": "Registrarse",
+    "signUpTitle": "Registrarse",
     "signUpNameError": "Por favor ingrese su nombre",
     "signUpTermsPart1": "Al registrarse, aceptas nuestros",
     "signUpTermsPart2": "Terminos de",
@@ -81,5 +83,12 @@
     "signUpTermsPart5": "Politícas de privacidad.",
     "signUpHaveAccountMsg": "Ya tienes una cuenta?",
     "signInButton": "Inicia Sesión",
-    "signUpSuccessMessage": "Cuenta creada exitosamente"
+    "signUpSuccessMessage": "Cuenta creada exitosamente",
+    "loginScreenTitle": "Inicia sesión en Uttil",
+    "loginTitle": "Iniciar Sesión",
+    "loginSubtitle": "¡Bienvenido de nuevo! Por favor ingrese sus datos.",
+    "forgotPasswordMsg": "¿Has olvidado tu contraseña?",
+    "forgotPasswordAction": "Reiniciala",
+    "loginSigninInvitationMsg": "¿No tienes una cuenta?",
+    "loginSuccessMessage": "Iniciaste sesión!"
 }

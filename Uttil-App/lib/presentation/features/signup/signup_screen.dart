@@ -5,7 +5,7 @@ import '../../../core/l10n/extensions/app_localizations_context.dart';
 import '../../../core/utils/Dark_lightmode.dart';
 import '../../../core/helpar/routes_helper.dart';
 import '../../../core/utils/fontfameli_model.dart';
-import '../screen/login_flow/login_screen.dart';
+import '../login/login_screen.dart';
 import '../../widgets/custom_widget.dart';
 import '../../widgets/alert_message.dart';
 import '../../controller/signup/signup_controller.dart';
@@ -121,7 +121,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            context.localization.signUpScreenTitle,
+                            context.localization.signUpTitle,
                             style: TextStyle(
                               fontFamily: FontFamily.gilroyBold,
                               color: notifire.getwhiteblackcolor,
@@ -167,7 +167,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 color: greyColor,
                               ),
                             ),
-                            labelText: context.localization.signUpEmailHint,
+                            labelText: context.localization.onboardingEmailHint,
                             validator: (p0) =>
                                 Validator.validateEmail(p0, context),
                             keyboardType: TextInputType.emailAddress,
@@ -204,7 +204,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ),
                               labelText:
-                                  this.context.localization.signUpPasswordHint,
+                                  this.context.localization.onboardingPasswordHint,
                               validator: (p0) =>
                                   Validator.validatePassword(p0, this.context),
                               onFieldSubmitted: (value) {
@@ -276,7 +276,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 15, vertical: 5),
                             buttoncolor: onbordingBlue,
-                            buttontext: context.localization.signUpScreenTitle,
+                            buttontext: context.localization.signUpTitle,
                             style: TextStyle(
                               color: WhiteColor,
                               fontFamily: FontFamily.gilroyBold,

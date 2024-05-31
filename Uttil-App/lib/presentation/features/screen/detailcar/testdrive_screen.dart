@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, unused_field, avoid_print, sort_child_properties_last, prefer_const_literals_to_create_immutables
-import 'package:uttil/presentation/features/screen/bottombar/bottombar_screen.dart';
+import 'package:uttil/presentation/features/bottom_navigation_bar/bottombar_screen.dart';
 import 'package:uttil/core/constants/App_content.dart';
 import 'package:uttil/core/constants/Colors.dart';
 import 'package:uttil/presentation/widgets/custom_widget.dart';

@@ -1,14 +1,13 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'package:uttil/presentation/features/screen/bottombar/favorite_screen.dart';
-import 'package:uttil/presentation/features/screen/bottombar/home_screen.dart';
-import 'package:uttil/presentation/features/screen/bottombar/message_screen.dart';
-import 'package:uttil/presentation/features/screen/bottombar/profile_screen.dart';
-import 'package:uttil/core/constants/Colors.dart';
-import 'package:uttil/core/utils/Dark_lightmode.dart';
-import 'package:uttil/core/utils/fontfameli_model.dart';
+import '../../../presentation/features/screen/bottombar/favorite_screen.dart';
+import '../home/home_screen.dart';
+import '../../../presentation/features/screen/bottombar/message_screen.dart';
+import '../../../presentation/features/screen/bottombar/profile_screen.dart';
+import '../../../core/constants/App_content.dart';
+import '../../../core/l10n/extensions/app_localizations_context.dart';
+import '../../../core/constants/Colors.dart';
+import '../../../core/utils/Dark_lightmode.dart';
+import '../../../core/utils/fontfameli_model.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -21,15 +20,15 @@ class BottomBarScreen extends StatefulWidget {
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
   int currentIndex = 0;
+  late ColorNotifire notifire;
   List<Widget> myChilders = [
-    HomeScreen(),
-    FavoriteScreen(),
-    MessageScreen(),
-    ProfileScreen(),
+    const HomeScreen(),
+    const FavoriteScreen(),
+    const MessageScreen(),
+    const ProfileScreen(),
   ];
 
-  late ColorNotifire notifire;
-  getdarkmodepreviousstate() async {
+  _getDarkModePreviousState() async {
     final prefs = await SharedPreferences.getInstance();
     bool? previusstate = prefs.getBool("setIsDark");
     if (previusstate == null) {
@@ -41,7 +40,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
 
   @override
   void initState() {
-    getdarkmodepreviousstate();
+    _getDarkModePreviousState();
     super.initState();
   }
 
@@ -70,54 +69,54 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/images/homeOutline.png",
+              Appcontent.homeOutline,
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/images/homeBold.png",
+              Appcontent.homeBold,
               height: MediaQuery.of(context).size.height / 35,
             ),
-            label: 'Home'.tr,
+            label: context.localization.bottomNavigationHomeItem,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/images/favoriteOutline.png",
+              Appcontent.favoriteOutline,
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/images/fevoriteBold.png",
+              Appcontent.favoriteBold,
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),
-            label: 'Favorites'.tr,
+            label: context.localization.bottomNavigationFavoritesItem,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/images/messageOutline.png",
+              Appcontent.messageOutline,
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/images/messageBold.png",
+              Appcontent.messageBold,
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),
-            label: 'Message'.tr,
+            label: context.localization.bottomNavigationMessageItem,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/images/profileOutline.png",
+              Appcontent.profileOutline,
               color: greyScale1,
               height: MediaQuery.of(context).size.height / 35,
             ),
             activeIcon: Image.asset(
-              "assets/images/profileBold.png",
+              Appcontent.profileBold,
               color: onbordingBlue,
               height: MediaQuery.of(context).size.height / 35,
             ),
-            label: 'Profile'.tr,
+            label: context.localization.bottomNavigationProfileItem,
           ),
         ],
         onTap: (value) {

@@ -1,4 +1,4 @@
-import 'package:uttil/presentation/features/screen/bottombar/home_screen.dart';
+import 'package:uttil/presentation/features/home/home_screen.dart';
 import 'package:uttil/core/constants/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

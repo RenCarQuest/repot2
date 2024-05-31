@@ -94,5 +94,15 @@
     "forgotPasswordMsg": "Forgot password?",
     "forgotPasswordAction": "Reset it",
     "loginSigninInvitationMsg": "Don’t have and account?",
-    "loginSuccessMessage": "You are logged in!"
+    "loginSuccessMessage": "You are logged in!",
+    "bottomNavigationHomeItem": "Home",
+    "bottomNavigationFavoritesItem": "Favorites",
+    "bottomNavigationMessageItem": "Message",
+    "bottomNavigationProfileItem": "Profile",
+    "homeLocationTitle": "Location",
+    "homeSearchBarHint": "Search cars...",
+    "homeRecommendationTitle": "Car recommendation",
+    "homeTopBrands": "Top brands",
+    "carItemAvailableMsg": "Available",
+    "carItemNotAvailableMsg": "In use"
 }

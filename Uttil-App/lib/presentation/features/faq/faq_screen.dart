@@ -55,7 +55,7 @@ class _FaqScreenState extends State<FaqScreen> {
         title: Text(
           context.localization.helpCenterTitle,
           style: const TextStyle(
-            fontFamily: FontFamily.gilroyBold,
+            fontFamily: FontFamily.nebulasSemiBold,
             fontSize: 18,
             color: Colors.white,
           ),
@@ -90,10 +90,9 @@ class _FaqScreenState extends State<FaqScreen> {
                       Text(
                         context.localization.helpCenterHeaderMessage,
                         style: const TextStyle(
-                          fontFamily: FontFamily.gilroyBold,
+                          fontFamily: FontFamily.nebulasSemiBold,
                           fontSize: 32,
                           color: Colors.white,
-                          fontWeight: FontWeight.w700,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -117,7 +116,7 @@ class _FaqScreenState extends State<FaqScreen> {
                                     BorderSide(color: Color(0xff534CFF))),
                             hintText: context.localization.searchBarHint,
                             hintStyle: const TextStyle(
-                                fontFamily: FontFamily.gilroyMedium,
+                                fontFamily: FontFamily.dMSans,
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
                                 color: Color(0xffC6C3FF)),
@@ -139,7 +138,7 @@ class _FaqScreenState extends State<FaqScreen> {
                 child: Text(
                   context.localization.helpCenterSectionTitle,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyBold,
+                    fontFamily: FontFamily.nebulasMedium,
                     color: greyScale,
                     fontSize: 15,
                   ),
@@ -196,7 +195,7 @@ class _FaqScreenState extends State<FaqScreen> {
               child: Text(
                 question,
                 style: TextStyle(
-                  fontFamily: FontFamily.gilroyBold,
+                  fontFamily: FontFamily.dMSans,
                   fontWeight: FontWeight.w700,
                   fontSize: 16,
                   color: notifire.getwhiteblackcolor,

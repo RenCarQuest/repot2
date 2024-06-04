@@ -94,7 +94,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             Text(
                               context.localization.appTitle,
                               style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
+                                fontFamily: FontFamily.nebulasSemiBold,
                                 fontSize: 32,
                                 color: WhiteColor,
                                 letterSpacing: 1,
@@ -115,7 +115,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         Text(
                           state.onboardingList[state.currentPage].title,
                           style: TextStyle(
-                            fontFamily: FontFamily.gilroyBold,
+                            fontFamily: FontFamily.nebulasMedium,
                             color: WhiteColor,
                             fontSize: 25,
                           ),
@@ -124,7 +124,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         Text(
                           state.onboardingList[state.currentPage].description,
                           style: TextStyle(
-                            fontFamily: FontFamily.gilroyMedium,
+                            fontFamily: FontFamily.dMSans,
                             color: greyScale,
                             fontSize: 15,
                           ),
@@ -193,7 +193,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             image: Appcontent.question,
             buttonText: context.localization.helpCenterFooterContactButton,
             style: TextStyle(
-              fontFamily: FontFamily.gilroyMedium,
+              fontFamily: FontFamily.dMSans,
               color: WhiteColor,
               fontSize: 16,
             ),
@@ -229,28 +229,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             buttoncolor: WhiteColor,
             buttontext: context.localization.onboardingEmailButton,
             style: TextStyle(
-              fontFamily: FontFamily.gilroyBold,
+              fontFamily: FontFamily.dMSans,
+              fontWeight: FontWeight.bold,
               color: onbordingBlue,
               fontSize: 15,
             ),
             onclick: () {
               Get.to(() => const LoginScreen());
             },
-          ),
-          const SizedBox(height: 10),
-          imageButton(
-            height: 50,
-            width: Get.size.width,
-            margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-            image: Appcontent.google,
-            buttonText: context.localization.onboardingGoogleButton,
-            style: TextStyle(
-              fontFamily: FontFamily.gilroyMedium,
-              color: WhiteColor,
-              fontSize: 15,
-            ),
-            border: Border.all(color: grey50),
-            onTap: () {},
           ),
         ],
       );
@@ -277,7 +263,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             child: Text(
               context.localization.generalSkip,
               style: TextStyle(
-                fontFamily: FontFamily.gilroyMedium,
+                fontFamily: FontFamily.dMSans,
+                fontWeight: FontWeight.w600,
                 color: currentIndex == 0 ? onbordingBlue : WhiteColor,
                 fontSize: 16,
               ),

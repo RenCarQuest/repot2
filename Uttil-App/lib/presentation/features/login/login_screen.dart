@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Text(
                             context.localization.loginScreenTitle,
                             style: TextStyle(
-                              fontFamily: FontFamily.gilroyBold,
+                              fontFamily: FontFamily.nebulasMedium,
                               color: notifire.getwhiteblackcolor,
                               fontSize: 28,
                             ),
@@ -123,7 +123,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           Text(
                             context.localization.loginSubtitle,
                             style: TextStyle(
-                              fontFamily: FontFamily.gilroyMedium,
+                              fontFamily: FontFamily.dMSans,
+                              fontWeight: FontWeight.w500,
                               fontSize: 15,
                               color: greyScale,
                             ),
@@ -199,7 +200,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Text(
                                   context.localization.forgotPasswordMsg,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyMedium,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w500,
                                     color: notifire.getwhiteblackcolor,
                                     fontSize: 15,
                                   ),
@@ -208,7 +210,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Text(
                                   context.localization.forgotPasswordAction,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyBold,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w700,
                                     color: onbordingBlue,
                                     fontSize: 15,
                                   ),
@@ -226,7 +229,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             buttontext: context.localization.loginTitle,
                             style: TextStyle(
                               color: WhiteColor,
-                              fontFamily: FontFamily.gilroyBold,
+                              fontFamily: FontFamily.dMSans,
+                              fontWeight: FontWeight.w600,
                               fontSize: 15,
                             ),
                             onclick: _login,
@@ -239,7 +243,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               Text(
                                 context.localization.loginSigninInvitationMsg,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.dMSans,
+                                  fontWeight: FontWeight.w500,
                                   color: notifire.getwhiteblackcolor,
                                   fontSize: 15,
                                 ),
@@ -252,7 +257,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Text(
                                   context.localization.signUpTitle,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyBold,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w700,
                                     color: onbordingBlue,
                                     fontSize: 15,
                                   ),

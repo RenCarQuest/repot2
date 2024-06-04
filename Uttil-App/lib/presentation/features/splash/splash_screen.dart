@@ -77,16 +77,16 @@ class _SplashScreen extends State<SplashScreen> {
                   TextSpan(
                     text: 'U',
                     style: TextStyle(
-                      fontFamily: FontFamily.gilroyBold,
+                      fontFamily: FontFamily.lABGrotesk,
                       fontSize: 39,
                       color: notifire.getwhiteblackcolor,
-                      letterSpacing: 1,
+                      letterSpacing: -5,
                     ),
                   ),
                   TextSpan(
                     text: 'ttil',
                     style: TextStyle(
-                      fontFamily: FontFamily.gilroyBold,
+                      fontFamily: FontFamily.nebulasMedium,
                       fontSize: 39,
                       color: onbordingBlue,
                       letterSpacing: 1,

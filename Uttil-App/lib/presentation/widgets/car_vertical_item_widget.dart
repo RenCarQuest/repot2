@@ -55,7 +55,8 @@ class CarVerticalItemWidget extends StatelessWidget {
                         ? context.localization.carItemAvailableMsg
                         : context.localization.carItemNotAvailableMsg,
                     style: TextStyle(
-                      fontFamily: FontFamily.gilroyBold,
+                      fontFamily: FontFamily.dMSans,
+                      fontWeight: FontWeight.w700,
                       color: WhiteColor,
                     ),
                   ),
@@ -88,7 +89,8 @@ class CarVerticalItemWidget extends StatelessWidget {
                 Expanded(
                   child: Text('${car.brand} ${car.model}',
                       style: TextStyle(
-                        fontFamily: FontFamily.gilroyBold,
+                        fontFamily: FontFamily.dMSans,
+                        fontWeight: FontWeight.w700,
                         fontSize: 15,
                         color: notifire.getwhiteblackcolor,
                       )),
@@ -103,7 +105,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                 Text(
                   "4.8",
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyMedium,
+                    fontFamily: FontFamily.lABGrotesk,
                     color: greyScale1,
                     fontSize: 14,
                   ),
@@ -126,7 +128,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                 Text(
                   car.fuelType,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyMedium,
+                    fontFamily: FontFamily.dMSans,
                     color: greyScale1,
                     fontSize: 13,
                   ),
@@ -141,7 +143,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                 Text(
                   car.transmissionType,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyMedium,
+                    fontFamily: FontFamily.dMSans,
                     color: greyScale1,
                     fontSize: 13,
                   ),
@@ -150,7 +152,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                 Text(
                   NumberFormatUtils.formatPrice(car.rentalPricePerDay),
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyBold,
+                    fontFamily: FontFamily.lABGrotesk,
                     color: notifire.getwhiteblackcolor,
                     fontSize: 15,
                   ),

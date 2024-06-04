@@ -123,7 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           Text(
                             context.localization.signUpTitle,
                             style: TextStyle(
-                              fontFamily: FontFamily.gilroyBold,
+                              fontFamily: FontFamily.nebulasMedium,
                               color: notifire.getwhiteblackcolor,
                               fontSize: 28,
                             ),
@@ -220,7 +220,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpTermsPart1,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.dMSans,
                                   color: notifire.getwhiteblackcolor,
                                   fontSize: 15,
                                 ),
@@ -229,7 +229,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpTermsPart2,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyBold,
+                                  fontFamily: FontFamily.dMSans,
+                                  fontWeight: FontWeight.w700,
                                   color: onbordingBlue,
                                   fontSize: 15,
                                 ),
@@ -242,7 +243,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpTermsPart3,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyBold,
+                                  fontFamily: FontFamily.dMSans,
+                                  fontWeight: FontWeight.w700,
                                   color: onbordingBlue,
                                   fontSize: 15,
                                 ),
@@ -251,7 +253,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpTermsPart4,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.dMSans,
                                   color: notifire.getwhiteblackcolor,
                                   fontSize: 15,
                                 ),
@@ -260,7 +262,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpTermsPart5,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyBold,
+                                  fontFamily: FontFamily.dMSans,
+                                  fontWeight: FontWeight.w700,
                                   color: onbordingBlue,
                                   fontSize: 15,
                                 ),
@@ -279,7 +282,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             buttontext: context.localization.signUpTitle,
                             style: TextStyle(
                               color: WhiteColor,
-                              fontFamily: FontFamily.gilroyBold,
+                              fontFamily: FontFamily.dMSans,
+                              fontWeight: FontWeight.w600,
                               fontSize: 15,
                             ),
                             onclick: _register,
@@ -294,7 +298,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             buttonText:
                                 context.localization.onboardingGoogleButton,
                             style: TextStyle(
-                              fontFamily: FontFamily.gilroyMedium,
+                              fontFamily: FontFamily.dMSans,
+                              fontWeight: FontWeight.w500,
                               color: notifire.getwhiteblackcolor,
                               fontSize: 15,
                             ),
@@ -314,7 +319,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             buttonText:
                                 context.localization.onboardingAppleButton,
                             style: TextStyle(
-                              fontFamily: FontFamily.gilroyMedium,
+                              fontFamily: FontFamily.dMSans,
+                              fontWeight: FontWeight.w500,
                               color: notifire.getwhiteblackcolor,
                               fontSize: 15,
                             ),
@@ -332,7 +338,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Text(
                                 context.localization.signUpHaveAccountMsg,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.dMSans,
                                   color: notifire.getwhiteblackcolor,
                                   fontSize: 15,
                                 ),
@@ -343,7 +349,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 child: Text(
                                   context.localization.signInButton,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyBold,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w600,
                                     color: onbordingBlue,
                                     fontSize: 15,
                                   ),

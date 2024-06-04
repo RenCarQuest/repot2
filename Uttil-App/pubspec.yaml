@@ -90,6 +90,24 @@ flutter:
     - config/
 
   fonts:
+    - family: Nebulas Regular
+      fonts:
+        - asset: assets/fonts/Nebulas-Regular.ttf
+    - family: Nebulas Medium
+      fonts:
+        - asset: assets/fonts/Nebulas-Medium.ttf
+    - family: Nebulas SemiBold
+      fonts:
+        - asset: assets/fonts/Nebulas-SemiBold.ttf
+    - family: LAB-Grotesk
+      fonts:
+        - asset: assets/fonts/LAB-Grotesk.otf
+    - family: DMSans
+      fonts:
+        - asset: assets/fonts/DMSans-Variable.ttf
+    - family: DMSans Italic
+      fonts:
+        - asset: assets/fonts/DMSans-Italic-Variable.ttf
     - family: Gilroy Black
       fonts:
         - asset: assets/fonts/Gilroy-Black.otf

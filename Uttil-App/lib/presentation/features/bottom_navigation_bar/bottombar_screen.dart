@@ -55,12 +55,14 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         unselectedItemColor: greyScale1,
         elevation: 0,
         selectedLabelStyle: const TextStyle(
-          fontFamily: FontFamily.gilroyBold,
+          fontFamily: FontFamily.dMSans,
+          fontWeight: FontWeight.w700,
           fontSize: 12,
         ),
         fixedColor: onbordingBlue,
         unselectedLabelStyle: const TextStyle(
-          fontFamily: FontFamily.gilroyMedium,
+          fontFamily: FontFamily.dMSans,
+          fontWeight: FontWeight.w500,
         ),
         currentIndex: currentIndex,
         landscapeLayout: BottomNavigationBarLandscapeLayout.centered,

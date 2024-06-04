@@ -153,7 +153,8 @@ textFormFild(
       autovalidateMode: AutovalidateMode.onUserInteraction,
       cursorColor: onbordingBlue,
       style: TextStyle(
-        fontFamily: FontFamily.gilroyBold,
+        fontFamily: FontFamily.dMSans,
+        fontWeight: FontWeight.w500,
         fontSize: 14,
         color: notifire.getwhiteblackcolor,
       ),
@@ -180,7 +181,7 @@ textFormFild(
         labelText: labelText,
         labelStyle: TextStyle(
           color: greyColor,
-          fontFamily: FontFamily.gilroyMedium,
+          fontFamily: FontFamily.dMSans,
         ),
       ),
     ),

@@ -121,8 +121,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                           Text(
                                             model().catList[index],
                                             style: TextStyle(
-                                              fontFamily:
-                                                  FontFamily.gilroyMedium,
+                                              fontFamily: FontFamily.dMSans,
+                                              fontWeight: FontWeight.w500,
                                               fontSize: 15,
                                               color:
                                                   notifire.getwhiteblackcolor,
@@ -140,7 +140,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             Text(
                               context.localization.homeRecommendationTitle,
                               style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
+                                fontFamily: FontFamily.dMSans,
+                                fontWeight: FontWeight.w700,
                                 color: notifire.getwhiteblackcolor,
                                 fontSize: 18,
                               ),
@@ -153,7 +154,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: Text(
                                 context.localization.viewAllMessage,
                                 style: TextStyle(
-                                  fontFamily: FontFamily.gilroyMedium,
+                                  fontFamily: FontFamily.dMSans,
+                                  fontWeight: FontWeight.w500,
                                   color: greyScale1,
                                   fontSize: 15,
                                 ),
@@ -184,7 +186,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             Text(
                               context.localization.homeTopBrands,
                               style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
+                                fontFamily: FontFamily.dMSans,
+                                fontWeight: FontWeight.w700,
                                 color: notifire.getwhiteblackcolor,
                                 fontSize: 18,
                               ),
@@ -197,7 +200,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   context.localization.viewAllMessage,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyMedium,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w500,
                                     color: greyScale1,
                                     fontSize: 15,
                                   ),
@@ -250,7 +254,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                           Text(
                                             logoname[index],
                                             style: TextStyle(
-                                              fontFamily: FontFamily.gilroyBold,
+                                              fontFamily: FontFamily.dMSans,
                                               color:
                                                   notifire.getwhiteblackcolor,
                                               fontSize: 15,
@@ -268,7 +272,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             Text(
                               context.localization.homeRecommendationTitle,
                               style: TextStyle(
-                                fontFamily: FontFamily.gilroyBold,
+                                fontFamily: FontFamily.dMSans,
+                                fontWeight: FontWeight.w600,
                                 color: notifire.getwhiteblackcolor,
                                 fontSize: 18,
                               ),
@@ -281,7 +286,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   context.localization.viewAllMessage,
                                   style: TextStyle(
-                                    fontFamily: FontFamily.gilroyMedium,
+                                    fontFamily: FontFamily.dMSans,
+                                    fontWeight: FontWeight.w500,
                                     color: greyScale1,
                                     fontSize: 15,
                                   ),
@@ -350,7 +356,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     "Audi A8 Quattro",
                                                     style: TextStyle(
                                                       fontFamily:
-                                                          FontFamily.gilroyBold,
+                                                          FontFamily.dMSans,
+                                                          fontWeight: FontWeight.w700,
                                                       fontSize: 15,
                                                       color: notifire
                                                           .getwhiteblackcolor,
@@ -367,7 +374,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   "4.8",
                                                   style: TextStyle(
                                                     fontFamily:
-                                                        FontFamily.gilroyMedium,
+                                                        FontFamily.lABGrotesk,
                                                     color: greyScale1,
                                                     fontSize: 14,
                                                   ),
@@ -391,7 +398,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   "Automatic",
                                                   style: TextStyle(
                                                     fontFamily:
-                                                        FontFamily.gilroyMedium,
+                                                        FontFamily.dMSans,
                                                     color: greyScale1,
                                                     fontSize: 13,
                                                   ),
@@ -401,8 +408,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   "\$112,150.00",
                                                   style: TextStyle(
                                                     fontFamily:
-                                                        FontFamily.gilroyBold,
-                                                    fontSize: 15,
+                                                        FontFamily.lABGrotesk,
+                                                    fontSize: 12,
                                                     color: onbordingBlue,
                                                   ),
                                                 ),
@@ -640,7 +647,7 @@ class SearchField extends StatelessWidget {
             Text(
               context.localization.homeSearchBarHint,
               style: TextStyle(
-                fontFamily: FontFamily.gilroyMedium,
+                fontFamily: FontFamily.dMSans,
                 color: greyColor,
                 fontSize: 15,
               ),
@@ -706,7 +713,7 @@ class LocationHeader extends StatelessWidget {
                 Text(
                   context.localization.homeLocationTitle,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyMedium,
+                    fontFamily: FontFamily.dMSans,
                     color: greyScale1,
                     fontSize: 12,
                   ),
@@ -715,7 +722,8 @@ class LocationHeader extends StatelessWidget {
                 Text(
                   "San Fransisco",
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyBold,
+                    fontFamily: FontFamily.dMSans,
+                    fontWeight: FontWeight.w600,
                     color: notifire.getwhiteblackcolor,
                     fontSize: 15,
                   ),

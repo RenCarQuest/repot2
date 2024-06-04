@@ -50,7 +50,7 @@ class _FAQAnswerScreenState extends State<FAQAnswerScreen> {
           context.localization.helpCenterScreenTitle,
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontFamily: FontFamily.gilroyBold,
+            fontFamily: FontFamily.nebulasSemiBold,
             color: notifire.getwhiteblackcolor,
             fontSize: 16,
           ),
@@ -66,7 +66,7 @@ class _FAQAnswerScreenState extends State<FAQAnswerScreen> {
                   widget.answer.title,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyBold,
+                    fontFamily: FontFamily.nebulasSemiBold,
                     color: notifire.getwhiteblackcolor,
                     fontSize: 16,
                   ),
@@ -77,7 +77,8 @@ class _FAQAnswerScreenState extends State<FAQAnswerScreen> {
                 child: Text(
                   widget.answer.description,
                   style: TextStyle(
-                    fontFamily: FontFamily.gilroyMedium,
+                    fontFamily: FontFamily.dMSans,
+                    fontWeight: FontWeight.normal,
                     color: notifire.getwhiteblackcolor,
                     fontSize: 16,
                   ),

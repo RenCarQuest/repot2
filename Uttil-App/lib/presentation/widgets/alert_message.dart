@@ -1,3 +1,4 @@
+import '../../core/utils/fontfameli_model.dart';
 import '../../core/l10n/extensions/app_localizations_context.dart';
 import '../../core/constants/Colors.dart';
 import 'package:bot_toast/bot_toast.dart';
@@ -6,12 +7,16 @@ import 'package:flutter/material.dart';
 class AlertMessage {
   static CancelFunc? loadingCancelFunc;
 
-  static void _show(String message, {required bool error, void Function()? onClose}) {
+  static void _show(
+    String message, {
+    required bool error,
+    void Function()? onClose,
+  }) {
     BotToast.showCustomNotification(
       toastBuilder: (context) => _CustomMessage(message: message, error: error),
       duration: const Duration(seconds: 4),
       align: const Alignment(0, 0.99),
-      onClose: onClose
+      onClose: onClose,
     );
   }
 
@@ -63,12 +68,13 @@ class _LoaderOverlay extends StatelessWidget {
             Row(
               children: [
                 SizedBox(
-                    width: 30,
-                    height: 30,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      backgroundColor: BlackColor,
-                    )),
+                  width: 30,
+                  height: 30,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    backgroundColor: BlackColor,
+                  ),
+                ),
                 const SizedBox(width: 16),
                 Text(
                   label,
@@ -110,7 +116,10 @@ class _CustomMessage extends StatelessWidget {
               message,
               maxLines: 5,
               overflow: TextOverflow.ellipsis,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(
+                color: Colors.white,
+                fontFamily: FontFamily.dMSans,
+              ),
             ),
           ),
         ],

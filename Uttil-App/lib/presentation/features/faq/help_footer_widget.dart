@@ -27,7 +27,8 @@ class HelpFooterWidget extends StatelessWidget {
           Text(
             context.localization.helpCenterFooterTitle,
             style: TextStyle(
-              fontFamily: FontFamily.gilroyBold,
+              fontFamily: FontFamily.dMSans,
+              fontWeight: FontWeight.w600,
               color: textColor,
               fontSize: 16,
             ),
@@ -37,7 +38,8 @@ class HelpFooterWidget extends StatelessWidget {
             context.localization.helpCenterFooterBody,
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontFamily: FontFamily.gilroyRegular,
+              fontFamily: FontFamily.dMSans,
+              fontWeight: FontWeight.w400,
               color: textColor,
               fontSize: 16,
             ),
@@ -48,7 +50,8 @@ class HelpFooterWidget extends StatelessWidget {
             child: Text(
               context.localization.helpCenterFooterContactButton,
               style: TextStyle(
-                fontFamily: FontFamily.gilroyMedium,
+                fontFamily: FontFamily.dMSans,
+                fontWeight: FontWeight.w500,
                 color: onbordingBlue,
                 fontSize: 16,
               ),

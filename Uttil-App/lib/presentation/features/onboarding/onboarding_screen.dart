@@ -46,7 +46,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 Container(
                   height: Get.size.height,
                   width: Get.size.width,
-                  color: state.currentPage == 0 ? BlackColor : onbordingBlue,
+                  color: customBlack,
                   child: PageView.builder(
                     physics: const ClampingScrollPhysics(),
                     controller: pageController,
@@ -73,7 +73,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                 ),
                 state.currentPage != state.onboardingList.length - 1
-                    ? _pageIndicatorSection(state.currentPage, state.onboardingList.length)
+                    ? _pageIndicatorSection(
+                        state.currentPage, state.onboardingList.length)
                     : const SizedBox(),
                 state.currentPage == state.onboardingList.length - 1
                     ? Positioned(
@@ -91,15 +92,39 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                             const SizedBox(width: 10),
-                            Text(
-                              context.localization.appTitle,
-                              style: TextStyle(
-                                fontFamily: FontFamily.nebulasSemiBold,
-                                fontSize: 32,
-                                color: WhiteColor,
-                                letterSpacing: 1,
+                            RichText(
+                              text: TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: 'U',
+                                    style: TextStyle(
+                                      fontFamily: FontFamily.lABGrotesk,
+                                      fontSize: 32,
+                                      color: accent,
+                                      letterSpacing: -5,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: 'ttil',
+                                    style: TextStyle(
+                                      fontFamily: FontFamily.nebulasMedium,
+                                      fontSize: 32,
+                                      color: customWhite,
+                                      letterSpacing: 1,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
+                            // Text(
+                            //   context.localization.appTitle,
+                            //   style: TextStyle(
+                            //     fontFamily: FontFamily.nebulasSemiBold,
+                            //     fontSize: 32,
+                            //     color: customWhite,
+                            //     letterSpacing: 1,
+                            //   ),
+                            // ),
                           ],
                         ),
                       )
@@ -116,7 +141,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           state.onboardingList[state.currentPage].title,
                           style: TextStyle(
                             fontFamily: FontFamily.nebulasMedium,
-                            color: WhiteColor,
+                            color: customWhite,
                             fontSize: 25,
                           ),
                         ),
@@ -125,7 +150,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           state.onboardingList[state.currentPage].description,
                           style: TextStyle(
                             fontFamily: FontFamily.dMSans,
-                            color: greyScale,
+                            color: customGrey,
                             fontSize: 15,
                           ),
                         ),
@@ -137,7 +162,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   bottom: 50,
                   left: 0,
                   right: 0,
-                  child: _footerSection(state.currentPage, state.onboardingList.length - 1),
+                  child: _footerSection(
+                      state.currentPage, state.onboardingList.length - 1),
                 )
               ],
             );
@@ -194,7 +220,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             buttonText: context.localization.helpCenterFooterContactButton,
             style: TextStyle(
               fontFamily: FontFamily.dMSans,
-              color: WhiteColor,
+              color: customWhite,
               fontSize: 16,
             ),
             onTap: () {
@@ -206,11 +232,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             height: 50,
             Width: Get.size.width,
             margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-            buttoncolor: index == 0 ? onbordingBlue : WhiteColor,
+            buttoncolor: index == 0 ? accent : customWhite,
             buttontext: context.localization.generalGetStartedButton,
             style: TextStyle(
               fontFamily: FontFamily.gilroyBold,
-              color: index == 0 ? WhiteColor : onbordingBlue,
+              color: index == 0 ? customWhite : accent,
               fontSize: 15,
             ),
             onclick: () {
@@ -226,12 +252,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             height: 50,
             Width: Get.size.width,
             margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-            buttoncolor: WhiteColor,
+            buttoncolor: customWhite,
             buttontext: context.localization.onboardingEmailButton,
             style: TextStyle(
               fontFamily: FontFamily.dMSans,
               fontWeight: FontWeight.bold,
-              color: onbordingBlue,
+              color: accent,
               fontSize: 15,
             ),
             onclick: () {
@@ -265,7 +291,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               style: TextStyle(
                 fontFamily: FontFamily.dMSans,
                 fontWeight: FontWeight.w600,
-                color: currentIndex == 0 ? onbordingBlue : WhiteColor,
+                color: accent,
                 fontSize: 16,
               ),
             ),

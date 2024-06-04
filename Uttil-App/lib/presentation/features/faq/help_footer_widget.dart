@@ -29,7 +29,7 @@ class HelpFooterWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: FontFamily.dMSans,
               fontWeight: FontWeight.w600,
-              color: textColor,
+              color: customBlack,
               fontSize: 16,
             ),
           ),
@@ -40,7 +40,7 @@ class HelpFooterWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: FontFamily.dMSans,
               fontWeight: FontWeight.w400,
-              color: textColor,
+              color: customBlack,
               fontSize: 16,
             ),
           ),
@@ -52,7 +52,7 @@ class HelpFooterWidget extends StatelessWidget {
               style: TextStyle(
                 fontFamily: FontFamily.dMSans,
                 fontWeight: FontWeight.w500,
-                color: onbordingBlue,
+                color: accent,
                 fontSize: 16,
               ),
             ),

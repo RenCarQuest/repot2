@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             context.localization.loginScreenTitle,
                             style: TextStyle(
                               fontFamily: FontFamily.nebulasMedium,
-                              color: notifire.getwhiteblackcolor,
+                              color: customBlack,
                               fontSize: 28,
                             ),
                           ),
@@ -126,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               fontFamily: FontFamily.dMSans,
                               fontWeight: FontWeight.w500,
                               fontSize: 15,
-                              color: greyScale,
+                              color: customGrey,
                             ),
                           ),
                           SizedBox(height: Get.size.height * 0.1),
@@ -141,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Appcontent.mail,
                                 height: 25,
                                 width: 25,
-                                color: greyColor,
+                                color: customGrey,
                               ),
                             ),
                             labelText: context.localization.onboardingEmailHint,
@@ -170,7 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                         : Appcontent.eyeOff,
                                     height: 25,
                                     width: 25,
-                                    color: greyColor,
+                                    color: customGrey,
                                   ),
                                 ),
                               ),
@@ -180,7 +180,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   Appcontent.lock,
                                   height: 25,
                                   width: 25,
-                                  color: greyColor,
+                                  color: customGrey,
                                 ),
                               ),
                               labelText: this
@@ -212,7 +212,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   style: TextStyle(
                                     fontFamily: FontFamily.dMSans,
                                     fontWeight: FontWeight.w700,
-                                    color: onbordingBlue,
+                                    color: accent,
                                     fontSize: 15,
                                   ),
                                 ),
@@ -225,7 +225,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             Width: Get.size.width,
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 15, vertical: 5),
-                            buttoncolor: onbordingBlue,
+                            buttoncolor: accent,
                             buttontext: context.localization.loginTitle,
                             style: TextStyle(
                               color: WhiteColor,
@@ -259,7 +259,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   style: TextStyle(
                                     fontFamily: FontFamily.dMSans,
                                     fontWeight: FontWeight.w700,
-                                    color: onbordingBlue,
+                                    color: accent,
                                     fontSize: 15,
                                   ),
                                 ),

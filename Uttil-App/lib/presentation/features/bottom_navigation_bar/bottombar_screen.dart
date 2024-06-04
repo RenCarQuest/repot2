@@ -52,14 +52,14 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: notifire.getbgcolor,
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: greyScale1,
+        unselectedItemColor: customGrey,
         elevation: 0,
         selectedLabelStyle: const TextStyle(
           fontFamily: FontFamily.dMSans,
           fontWeight: FontWeight.w700,
           fontSize: 12,
         ),
-        fixedColor: onbordingBlue,
+        fixedColor: accent,
         unselectedLabelStyle: const TextStyle(
           fontFamily: FontFamily.dMSans,
           fontWeight: FontWeight.w500,
@@ -77,6 +77,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             activeIcon: Image.asset(
               Appcontent.homeBold,
+              color: accent,
               height: MediaQuery.of(context).size.height / 35,
             ),
             label: context.localization.bottomNavigationHomeItem,
@@ -89,7 +90,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             activeIcon: Image.asset(
               Appcontent.favoriteBold,
-              color: onbordingBlue,
+              color: accent,
               height: MediaQuery.of(context).size.height / 35,
             ),
             label: context.localization.bottomNavigationFavoritesItem,
@@ -102,7 +103,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             activeIcon: Image.asset(
               Appcontent.messageBold,
-              color: onbordingBlue,
+              color: accent,
               height: MediaQuery.of(context).size.height / 35,
             ),
             label: context.localization.bottomNavigationMessageItem,
@@ -115,7 +116,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
             ),
             activeIcon: Image.asset(
               Appcontent.profileBold,
-              color: onbordingBlue,
+              color: accent,
               height: MediaQuery.of(context).size.height / 35,
             ),
             label: context.localization.bottomNavigationProfileItem,

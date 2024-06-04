@@ -69,6 +69,7 @@ class _SplashScreen extends State<SplashScreen> {
             Image.asset(
               Appcontent.sLogo,
               height: 68,
+              color: customGrey,
             ),
             const SizedBox(height: 15),
             RichText(
@@ -79,7 +80,7 @@ class _SplashScreen extends State<SplashScreen> {
                     style: TextStyle(
                       fontFamily: FontFamily.lABGrotesk,
                       fontSize: 39,
-                      color: notifire.getwhiteblackcolor,
+                      color: accent,
                       letterSpacing: -5,
                     ),
                   ),
@@ -88,7 +89,7 @@ class _SplashScreen extends State<SplashScreen> {
                     style: TextStyle(
                       fontFamily: FontFamily.nebulasMedium,
                       fontSize: 39,
-                      color: onbordingBlue,
+                      color: customBlack,
                       letterSpacing: 1,
                     ),
                   ),

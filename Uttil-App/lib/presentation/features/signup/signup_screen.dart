@@ -141,7 +141,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 Appcontent.user,
                                 height: 25,
                                 width: 25,
-                                color: greyColor,
+                                color: customGrey,
                               ),
                             ),
                             labelText: context.localization.signUpNameHint,
@@ -164,7 +164,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 Appcontent.mail,
                                 height: 25,
                                 width: 25,
-                                color: greyColor,
+                                color: customGrey,
                               ),
                             ),
                             labelText: context.localization.onboardingEmailHint,
@@ -190,7 +190,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                         : Appcontent.eyeOff,
                                     height: 25,
                                     width: 25,
-                                    color: greyColor,
+                                    color: customGrey,
                                   ),
                                 ),
                               ),
@@ -200,7 +200,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   Appcontent.lock,
                                   height: 25,
                                   width: 25,
-                                  color: greyColor,
+                                  color: customGrey,
                                 ),
                               ),
                               labelText:
@@ -231,7 +231,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 style: TextStyle(
                                   fontFamily: FontFamily.dMSans,
                                   fontWeight: FontWeight.w700,
-                                  color: onbordingBlue,
+                                  color: accent,
                                   fontSize: 15,
                                 ),
                               )
@@ -245,7 +245,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 style: TextStyle(
                                   fontFamily: FontFamily.dMSans,
                                   fontWeight: FontWeight.w700,
-                                  color: onbordingBlue,
+                                  color: accent,
                                   fontSize: 15,
                                 ),
                               ),
@@ -264,7 +264,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 style: TextStyle(
                                   fontFamily: FontFamily.dMSans,
                                   fontWeight: FontWeight.w700,
-                                  color: onbordingBlue,
+                                  color: accent,
                                   fontSize: 15,
                                 ),
                               ),
@@ -278,7 +278,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             Width: Get.size.width,
                             margin: const EdgeInsets.symmetric(
                                 horizontal: 15, vertical: 5),
-                            buttoncolor: onbordingBlue,
+                            buttoncolor: accent,
                             buttontext: context.localization.signUpTitle,
                             style: TextStyle(
                               color: WhiteColor,
@@ -351,7 +351,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   style: TextStyle(
                                     fontFamily: FontFamily.dMSans,
                                     fontWeight: FontWeight.w600,
-                                    color: onbordingBlue,
+                                    color: accent,
                                     fontSize: 15,
                                   ),
                                 ),

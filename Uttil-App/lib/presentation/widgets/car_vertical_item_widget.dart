@@ -48,7 +48,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: car.availability ? onbordingBlue : lightBlack2,
+                    color: car.availability ? accent : customGrey,
                   ),
                   child: Text(
                     car.availability
@@ -57,7 +57,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: FontFamily.dMSans,
                       fontWeight: FontWeight.w700,
-                      color: WhiteColor,
+                      color: customWhite,
                     ),
                   ),
                 ),
@@ -106,7 +106,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                   "4.8",
                   style: TextStyle(
                     fontFamily: FontFamily.lABGrotesk,
-                    color: greyScale1,
+                    color: customGrey,
                     fontSize: 14,
                   ),
                 )
@@ -114,7 +114,7 @@ class CarVerticalItemWidget extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Divider(
-              color: greyScale,
+              color: customGrey,
             ),
             const SizedBox(height: 8),
             Row(
@@ -129,7 +129,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                   car.fuelType,
                   style: TextStyle(
                     fontFamily: FontFamily.dMSans,
-                    color: greyScale1,
+                    color: customGrey,
                     fontSize: 13,
                   ),
                 ),
@@ -144,7 +144,7 @@ class CarVerticalItemWidget extends StatelessWidget {
                   car.transmissionType,
                   style: TextStyle(
                     fontFamily: FontFamily.dMSans,
-                    color: greyScale1,
+                    color: customGrey,
                     fontSize: 13,
                   ),
                 ),

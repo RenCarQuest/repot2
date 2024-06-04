@@ -156,7 +156,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style: TextStyle(
                                   fontFamily: FontFamily.dMSans,
                                   fontWeight: FontWeight.w500,
-                                  color: greyScale1,
+                                  color: customGrey,
                                   fontSize: 15,
                                 ),
                               ),
@@ -202,7 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   style: TextStyle(
                                     fontFamily: FontFamily.dMSans,
                                     fontWeight: FontWeight.w500,
-                                    color: greyScale1,
+                                    color: customGrey,
                                     fontSize: 15,
                                   ),
                                 )),
@@ -288,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   style: TextStyle(
                                     fontFamily: FontFamily.dMSans,
                                     fontWeight: FontWeight.w500,
-                                    color: greyScale1,
+                                    color: customGrey,
                                     fontSize: 15,
                                   ),
                                 )),
@@ -375,7 +375,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: TextStyle(
                                                     fontFamily:
                                                         FontFamily.lABGrotesk,
-                                                    color: greyScale1,
+                                                    color: customGrey,
                                                     fontSize: 14,
                                                   ),
                                                 )
@@ -399,7 +399,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                   style: TextStyle(
                                                     fontFamily:
                                                         FontFamily.dMSans,
-                                                    color: greyScale1,
+                                                    color: customGrey,
                                                     fontSize: 13,
                                                   ),
                                                 ),
@@ -410,7 +410,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     fontFamily:
                                                         FontFamily.lABGrotesk,
                                                     fontSize: 12,
-                                                    color: onbordingBlue,
+                                                    color: accent,
                                                   ),
                                                 ),
                                               ],
@@ -714,7 +714,7 @@ class LocationHeader extends StatelessWidget {
                   context.localization.homeLocationTitle,
                   style: TextStyle(
                     fontFamily: FontFamily.dMSans,
-                    color: greyScale1,
+                    color: customGrey,
                     fontSize: 12,
                   ),
                 ),

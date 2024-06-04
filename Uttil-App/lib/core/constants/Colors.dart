@@ -2,6 +2,11 @@
 
 import 'package:flutter/material.dart';
 
+Color customBlack = const Color(0xFF2E404D);
+Color customGrey = const Color(0xFFA8BAB8);
+Color customWhite = const Color(0xFFF2F2F2);
+Color accent = const Color(0xFFFF4F3D);
+
 Color WhiteColor = const Color(0xffF8FAFC);
 Color BlackColor = const Color(0xff000000);
 Color bmode = const Color(0xFF1B2537);

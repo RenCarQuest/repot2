@@ -35,7 +35,7 @@ class _FaqScreenState extends State<FaqScreen> {
     return Scaffold(
       backgroundColor: notifire.getbgcolor,
       appBar: AppBar(
-        backgroundColor: onbordingBlue,
+        backgroundColor: customGrey,
         elevation: 0,
         leading: InkWell(
           onTap: () {
@@ -77,7 +77,7 @@ class _FaqScreenState extends State<FaqScreen> {
             children: [
               Container(
                 width: Get.size.width,
-                color: onbordingBlue,
+                color: customGrey,
                 child: Padding(
                   padding: const EdgeInsets.only(
                     top: 35,
@@ -98,32 +98,32 @@ class _FaqScreenState extends State<FaqScreen> {
                       ),
                       const SizedBox(height: 15),
                       Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xff534CFF),
-                          borderRadius: BorderRadius.circular(16),
-                        ),
+                        // decoration: BoxDecoration(
+                        //   color: accent,
+                        //   borderRadius: BorderRadius.circular(16),
+                        // ),
                         child: TextField(
                           onChanged: context.read<FaqCubit>().onQueryChanged,
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.all(10),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(16)),
-                            focusedBorder: const OutlineInputBorder(
+                            focusedBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Color(0xff534CFF))),
-                            enabledBorder: const OutlineInputBorder(
+                                    BorderSide(color: accent)),
+                            enabledBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Color(0xff534CFF))),
+                                    BorderSide(color: accent)),
                             hintText: context.localization.searchBarHint,
-                            hintStyle: const TextStyle(
+                            hintStyle: TextStyle(
                                 fontFamily: FontFamily.dMSans,
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
-                                color: Color(0xffC6C3FF)),
+                                color: customBlack),
                             suffixIcon: Padding(
                               padding: const EdgeInsets.all(10),
                               child: Image.asset(Appcontent.search,
-                                  color: Colors.white, height: 24, width: 24),
+                                  color: accent, height: 24, width: 24),
                             ),
                           ),
                         ),

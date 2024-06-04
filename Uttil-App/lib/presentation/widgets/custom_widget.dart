@@ -151,7 +151,7 @@ textFormFild(
       textInputAction: textInputAction,
       keyboardType: keyboardType,
       autovalidateMode: AutovalidateMode.onUserInteraction,
-      cursorColor: onbordingBlue,
+      cursorColor: accent,
       style: TextStyle(
         fontFamily: FontFamily.dMSans,
         fontWeight: FontWeight.w500,
@@ -162,7 +162,7 @@ textFormFild(
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: onbordingBlue),
+          borderSide: BorderSide(color: accent),
         ),
         border: OutlineInputBorder(
           borderSide: BorderSide(
@@ -180,7 +180,7 @@ textFormFild(
         prefixIcon: prefixIcon,
         labelText: labelText,
         labelStyle: TextStyle(
-          color: greyColor,
+          color: customGrey,
           fontFamily: FontFamily.dMSans,
         ),
       ),
